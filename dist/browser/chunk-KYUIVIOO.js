@@ -1,0 +1,2 @@
+import{c as s}from"./chunk-5MVJAZRV.js";import{P as n,s as o,z as i}from"./chunk-5LC5EQRR.js";function p(t,g,e,C){return t===void 0?o([]):C?e.findAllCategoriesByCourseIdAndCategory(t,C).pipe(i(r=>e.convertFaqCategoriesAsStringFromServer(r.body||[])),n(r=>(s(g,r),o([])))):e.findAllCategoriesByCourseId(t).pipe(i(r=>e.convertFaqCategoriesAsStringFromServer(r.body||[])),n(r=>(s(g,r),o([]))))}export{p as a};
+//# sourceMappingURL=chunk-KYUIVIOO.js.map

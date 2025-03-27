@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/guard/pending-changes.guard.ts"],
+  "sourcesContent": ["import { CanDeactivate } from '@angular/router';\r\nimport { Injectable, inject } from '@angular/core';\r\nimport { TranslateService } from '@ngx-translate/core';\r\nimport { ComponentCanDeactivate } from 'app/shared/guard/can-deactivate.model';\r\n\r\n@Injectable({ providedIn: 'root' })\r\nexport class PendingChangesGuard implements CanDeactivate<ComponentCanDeactivate> {\r\n    private translateService = inject(TranslateService);\r\n\r\n    /**\r\n     * Function which returns whether a component can be deactivated\r\n     * @param component\r\n     *\r\n     * @returns boolean | Observable<boolean>\r\n     */\r\n    canDeactivate(component: ComponentCanDeactivate): boolean {\r\n        const warning = component.canDeactivateWarning || this.translateService.instant('pendingChanges');\r\n        return component.canDeactivate() ? true : confirm(warning);\r\n    }\r\n}\r\n"],
+  "mappings": "yFAMA,IAAaA,GAAmB,IAAA,CAA1B,MAAOA,CAAmB,CACpBC,iBAAmBC,EAAOC,CAAgB,EAQlDC,cAAcC,EAAiC,CAC3C,IAAMC,EAAUD,EAAUE,sBAAwB,KAAKN,iBAAiBO,QAAQ,gBAAgB,EAChG,OAAOH,EAAUD,cAAa,EAAK,GAAOK,QAAQH,CAAO,CAC7D,4CAZSN,EAAmB,6BAAnBA,EAAmBU,QAAnBV,EAAmBW,UAAAC,WADN,MAAM,CAAA,SACnBZ,CAAmB,GAAA",
+  "names": ["PendingChangesGuard", "translateService", "inject", "TranslateService", "canDeactivate", "component", "warning", "canDeactivateWarning", "instant", "confirm", "factory", "\u0275fac", "providedIn"]
+}

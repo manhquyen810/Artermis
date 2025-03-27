@@ -1,0 +1,2 @@
+var e=class{id;completionDate;successful;score;assessmentType;rated;hasComplaint;exampleResult;assessmentNote;testCaseCount;passedTestCaseCount;codeIssueCount;buildJobId;submission;assessor;feedbacks;participation;durationInMinutes;constructor(){this.successful=!1}static hasNonEmptyAssessmentNote(s){return s?!!s.assessmentNote?.note?.length:!1}};export{e as a};
+//# sourceMappingURL=chunk-BNRTXX46.js.map

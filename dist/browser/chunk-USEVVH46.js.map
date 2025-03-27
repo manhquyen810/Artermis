@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/lecture-unit/textUnit.model.ts"],
+  "sourcesContent": ["import { LectureUnit, LectureUnitType } from 'app/entities/lecture-unit/lectureUnit.model';\r\n\r\nexport class TextUnit extends LectureUnit {\r\n    public content?: string;\r\n\r\n    constructor() {\r\n        super(LectureUnitType.TEXT);\r\n    }\r\n}\r\n"],
+  "mappings": "+CAEM,IAAOA,EAAP,cAAwBC,CAAW,CAC9BC,QAEPC,aAAA,CACI,MAAMC,EAAgBC,IAAI,CAC9B",
+  "names": ["TextUnit", "LectureUnit", "content", "constructor", "LectureUnitType", "TEXT"]
+}

@@ -1,0 +1,2 @@
+import{h as n}from"./chunk-RTOKZMYN.js";var i="$$ ",r=" $$",s=(()=>{class t extends n{static ID="formula.action";static DEFAULT_FORMULA="e^{\\frac{1}{4} y^2}";constructor(){super(t.ID,"artemisApp.markdownEditor.commands.katex",void 0,void 0)}run(e){this.toggleDelimiterAroundSelection(e,this.getOpeningIdentifier(),r,t.DEFAULT_FORMULA),e.focus()}getOpeningIdentifier(){return i}}return t})();export{s as a};
+//# sourceMappingURL=chunk-DRT3JEBM.js.map

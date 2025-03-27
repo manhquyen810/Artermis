@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/core/auth/state-storage.service.ts"],
+  "sourcesContent": ["import { Injectable, inject } from '@angular/core';\r\nimport { SessionStorageService } from 'ngx-webstorage';\r\n\r\n@Injectable({ providedIn: 'root' })\r\nexport class StateStorageService {\r\n    private sessionStorage = inject(SessionStorageService);\r\n\r\n    /**\r\n     * Store an url as previousURL in the current session.\r\n     * @param url Url to be saved\r\n     */\r\n    storeUrl(url: string) {\r\n        this.sessionStorage.store('previousUrl', url);\r\n    }\r\n\r\n    /**\r\n     * Get the previousURL of the current session.\r\n     */\r\n    getUrl(): string {\r\n        return this.sessionStorage.retrieve('previousUrl');\r\n    }\r\n}\r\n"],
+  "mappings": "yFAIA,IAAaA,GAAmB,IAAA,CAA1B,MAAOA,CAAmB,CACpBC,eAAiBC,EAAOC,CAAqB,EAMrDC,SAASC,EAAW,CAChB,KAAKJ,eAAeK,MAAM,cAAeD,CAAG,CAChD,CAKAE,QAAM,CACF,OAAO,KAAKN,eAAeO,SAAS,aAAa,CACrD,4CAhBSR,EAAmB,6BAAnBA,EAAmBS,QAAnBT,EAAmBU,UAAAC,WADN,MAAM,CAAA,SACnBX,CAAmB,GAAA",
+  "names": ["StateStorageService", "sessionStorage", "inject", "SessionStorageService", "storeUrl", "url", "store", "getUrl", "retrieve", "factory", "\u0275fac", "providedIn"]
+}

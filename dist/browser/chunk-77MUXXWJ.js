@@ -1,0 +1,2 @@
+import{c as i}from"./chunk-E2KBL4LX.js";import{Ea as n,ya as r}from"./chunk-5LC5EQRR.js";var v=(()=>{class t{translateService=n(i);canDeactivate(e){let a=e.canDeactivateWarning||this.translateService.instant("pendingChanges");return e.canDeactivate()?!0:confirm(a)}static \u0275fac=function(a){return new(a||t)};static \u0275prov=r({token:t,factory:t.\u0275fac,providedIn:"root"})}return t})();export{v as a};
+//# sourceMappingURL=chunk-77MUXXWJ.js.map

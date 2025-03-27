@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/util/navbar.util.ts"],
+  "sourcesContent": ["/**\r\n * Update the header height SCSS variable based on the navbar height.\r\n *\r\n * The navbar height can change based on the screen size and the content of the navbar\r\n * (e.g. long breadcrumbs due to longs exercise names)\r\n */\r\nexport function updateHeaderHeight() {\r\n    setTimeout(() => {\r\n        const navbar = document.querySelector('jhi-navbar');\r\n        if (navbar) {\r\n            // do not use navbar.offsetHeight, this might not be defined in Safari!\r\n            const headerHeight = navbar.getBoundingClientRect().height;\r\n            document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);\r\n        }\r\n    });\r\n}\r\n"],
+  "mappings": "AAMM,SAAUA,GAAkB,CAC9BC,WAAW,IAAK,CACZ,IAAMC,EAASC,SAASC,cAAc,YAAY,EAClD,GAAIF,EAAQ,CAER,IAAMG,EAAeH,EAAOI,sBAAqB,EAAGC,OACpDJ,SAASK,gBAAgBC,MAAMC,YAAY,kBAAmB,GAAGL,CAAY,IAAI,CACrF,CACJ,CAAC,CACL",
+  "names": ["updateHeaderHeight", "setTimeout", "navbar", "document", "querySelector", "headerHeight", "getBoundingClientRect", "height", "documentElement", "style", "setProperty"]
+}

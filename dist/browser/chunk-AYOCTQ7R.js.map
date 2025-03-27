@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/lecture-unit/exerciseUnit.model.ts"],
+  "sourcesContent": ["import { LectureUnit, LectureUnitType } from 'app/entities/lecture-unit/lectureUnit.model';\r\nimport { Exercise } from 'app/entities/exercise.model';\r\n\r\nexport class ExerciseUnit extends LectureUnit {\r\n    public exercise?: Exercise;\r\n\r\n    constructor() {\r\n        super(LectureUnitType.EXERCISE);\r\n    }\r\n}\r\n"],
+  "mappings": "+CAGM,IAAOA,EAAP,cAA4BC,CAAW,CAClCC,SAEPC,aAAA,CACI,MAAMC,EAAgBC,QAAQ,CAClC",
+  "names": ["ExerciseUnit", "LectureUnit", "exercise", "constructor", "LectureUnitType", "EXERCISE"]
+}

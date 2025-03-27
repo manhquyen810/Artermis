@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/admin/docs/docs.component.ts", "src/main/webapp/app/admin/docs/docs.component.html"],
+  "sourcesContent": ["import { Component } from '@angular/core';\r\n\r\n@Component({\r\n    selector: 'jhi-docs',\r\n    templateUrl: './docs.component.html',\r\n    styleUrls: ['docs.scss'],\r\n})\r\nexport class DocsComponent {}\r\n", "<iframe src=\"api.html\" width=\"100%\" height=\"900\" seamless target=\"_top\" title=\"Open API UI\" class=\"border-0\"></iframe>\r\n"],
+  "mappings": "6FAOA,IAAaA,GAAa,IAAA,CAApB,MAAOA,CAAa,4CAAbA,EAAa,2BAAbA,EAAaC,UAAA,CAAA,CAAA,UAAA,CAAA,EAAAC,MAAA,EAAAC,KAAA,EAAAC,OAAA,CAAA,CAAA,MAAAC,YAAA,QAAA,OAAA,SAAA,MAAA,WAAA,GAAA,SAAA,OAAA,QAAA,cAAA,EAAA,UAAA,CAAA,EAAAC,SAAA,SAAAC,EAAAC,EAAA,CAAAD,EAAA,ICP1BE,EAAA,EAAA,SAAA,CAAA,EACAC,EAAA,EAAA;CAAA,mEDMaV,CAAa,GAAA",
+  "names": ["DocsComponent", "selectors", "decls", "vars", "consts", "\u0275\u0275trustConstantResourceUrl", "template", "rf", "ctx", "\u0275\u0275element", "\u0275\u0275text"]
+}

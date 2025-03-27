@@ -1,0 +1,30 @@
+import{b as L}from"./chunk-W3K7VYWC.js";import{f as U}from"./chunk-5AQXEKLE.js";import{a as F,d as O}from"./chunk-O26CMRR4.js";import{u as C,v as D}from"./chunk-VZRSC3LP.js";import{K as _,i as y,k as B,n as R}from"./chunk-WA5GEAJB.js";import{d as M}from"./chunk-EDXSOKK5.js";import{Oc as k,fa as j,wb as N}from"./chunk-Z4VHWOB5.js";import{a as I}from"./chunk-HKBU2OOC.js";import{a as P}from"./chunk-5ZXXURLP.js";import{a as w}from"./chunk-U54OSGNH.js";import{Db as c,Ea as l,L as g,Mc as m,P as h,Tb as b,Va as S,Zb as E,dd as e,g as p,kc as d,ra as u,s as x,sc as A,xc as o,ya as v,yc as s,zc as f}from"./chunk-5LC5EQRR.js";var T=function(i){return i.RUNNING="RUNNING",i.COMPLETED="COMPLETED",i}(T||{}),G=(()=>{class i{websocketService=l(P);buildRunSubjects={};buildRunTopics={};BUILD_RUN_TEMPLATE_TOPIC="/topic/programming-exercises/%programmingExerciseId%/all-builds-triggered";ngOnDestroy(){Object.values(this.buildRunSubjects).forEach(t=>t.unsubscribe())}notifySubscribers(t,n){let r=this.buildRunSubjects[t];r?r.next(n):this.buildRunSubjects[t]=new p(n)}subscribeWebsocket(t){if(!this.buildRunTopics[t]){let n=this.BUILD_RUN_TEMPLATE_TOPIC.replace("%programmingExerciseId%",t.toString());this.buildRunTopics[t]=n,this.websocketService.subscribe(n),this.websocketService.receive(n).pipe(u(r=>this.notifySubscribers(t,r))).subscribe()}}getBuildRunUpdates(t){let n=this.buildRunSubjects[t];if(n)return n.asObservable().pipe(g(a=>a!==void 0));let r=new p(void 0);return this.buildRunSubjects[t]=r,this.subscribeWebsocket(t),r.pipe(g(a=>a!==void 0))}static \u0275fac=function(n){return new(n||i)};static \u0275prov=v({token:i,factory:i.\u0275fac,providedIn:"root"})}return i})();function z(i,q){i&1&&(e(0,`
+                    `),o(1,"p",12),e(2,`
+                        The due date has passed, some of the student submissions might have received manual results created by teaching assistants. Newly generated automatic
+                        results would replace the manual results as the latest result for the participation.
+                    `),s(),e(3,`
+                `))}var xe=(()=>{class i{submissionService=l(L);programmingBuildRunService=l(G);modalService=l(D);FeatureToggle=I;ButtonType=F;exercise;disabled=!1;onBuildTriggered=new S;isTriggeringBuildAll=!1;faRedo=N;ngOnInit(){this.subscribeBuildRunUpdates()}openTriggerAllModal(){let t=this.modalService.open(V,{size:"lg",backdrop:"static"});t.componentInstance.exerciseId=this.exercise.id,t.componentInstance.dueDatePassed=U(this.exercise),t.result.then(()=>{this.submissionService.triggerInstructorBuildForAllParticipationsOfExercise(this.exercise.id).pipe(h(()=>x(void 0))).subscribe(()=>{this.onBuildTriggered.emit()})})}subscribeBuildRunUpdates(){this.programmingBuildRunService.getBuildRunUpdates(this.exercise.id).pipe(u(t=>this.isTriggeringBuildAll=t===T.RUNNING)).subscribe()}static \u0275fac=function(n){return new(n||i)};static \u0275cmp=b({type:i,selectors:[["jhi-programming-exercise-trigger-all-button"]],inputs:{exercise:"exercise",disabled:"disabled"},outputs:{onBuildTriggered:"onBuildTriggered"},decls:3,vars:7,consts:[["id","trigger-all-button",1,"ms-3",3,"onClick","disabled","btnType","isLoading","tooltip","icon","title","featureToggle"]],template:function(n,r){n&1&&(e(0,`
+        `),o(1,"jhi-button",0),m("onClick",function(){return r.openTriggerAllModal()}),s(),e(2,`
+    `)),n&2&&(c(),d("disabled",r.disabled)("btnType",r.ButtonType.ERROR)("isLoading",r.isTriggeringBuildAll)("tooltip","artemisApp.programmingExercise.resubmitAllTooltip")("icon",r.faRedo)("title","artemisApp.programmingExercise.resubmitAll")("featureToggle",r.FeatureToggle.ProgrammingExercises))},dependencies:[O],encapsulation:2})}return i})(),V=(()=>{class i{activeModal=l(C);exerciseId;dueDatePassed;faBan=j;faTimes=k;cancel(){this.activeModal.dismiss("cancel")}confirmTrigger(){this.activeModal.close()}static \u0275fac=function(n){return new(n||i)};static \u0275cmp=b({type:i,selectors:[["ng-component"]],inputs:{exerciseId:"exerciseId",dueDatePassed:"dueDatePassed"},decls:38,vars:3,consts:[["name","triggerAllForm",3,"ngSubmit"],[1,"modal-header"],["jhiTranslate","artemisApp.programmingExercise.resubmitAll",1,"modal-title"],["type","button","data-dismiss","modal","aria-hidden","true",1,"btn-close",3,"click"],[1,"modal-body"],["jhiTranslate","artemisApp.programmingExercise.resubmitAllDialog"],[1,"modal-footer"],["type","button","data-dismiss","modal",1,"btn","btn-secondary",3,"click"],[3,"icon"],["jhiTranslate","entity.action.cancel"],["type","submit",1,"btn","btn-danger"],["jhiTranslate","entity.action.confirm"],["jhiTranslate","artemisApp.programmingExercise.resubmitAllConfirmAfterDueDate",1,"text-danger","font-weight-bold"]],template:function(n,r){n&1&&(e(0,`
+        `),o(1,"form",0),m("ngSubmit",function(){return r.confirmTrigger()}),e(2,`
+            `),o(3,"div",1),e(4,`
+                `),o(5,"h4",2),e(6,"Trigger all"),s(),e(7,`
+                `),o(8,"button",3),m("click",function(){return r.cancel()}),s(),e(9,`
+            `),s(),e(10,`
+            `),o(11,"div",4),e(12,`
+                `),E(13,z,4,0),o(14,"p",5),e(15,`
+                    WARNING: Triggering all participations again is a very expensive operation. This action will start a CI build for every participation in this exercise!
+                `),s(),e(16,`
+            `),s(),e(17,`
+            `),o(18,"div",6),e(19,`
+                `),o(20,"button",7),m("click",function(){return r.cancel()}),e(21,`
+                    `),f(22,"fa-icon",8),e(23,"\xA0"),o(24,"span",9),e(25,"Cancel"),s(),e(26,`
+                `),s(),e(27,`
+                `),o(28,"button",10),e(29,`
+                    `),f(30,"fa-icon",8),e(31,`\xA0
+                    `),o(32,"span",11),e(33,"Confirm"),s(),e(34,`
+                `),s(),e(35,`
+            `),s(),e(36,`
+        `),s(),e(37,`
+    `)),n&2&&(c(13),A(r.dueDatePassed?13:-1),c(9),d("icon",r.faBan),c(8),d("icon",r.faTimes))},dependencies:[_,R,y,B,w,M],encapsulation:2})}return i})();export{xe as a};
+//# sourceMappingURL=chunk-RZNOTHJ6.js.map

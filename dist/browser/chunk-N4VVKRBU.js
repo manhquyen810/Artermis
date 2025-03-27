@@ -1,0 +1,2 @@
+import{L as s,O as a}from"./chunk-IOA4DPXY.js";import{Ea as n,ya as o}from"./chunk-5LC5EQRR.js";var f=(()=>{class t{http=n(a);assignmentResourceUrl="api/programming/repository";getBuildLogs(i,e){let r=new s;return e&&(r=r.set("resultId",e)),this.http.get(`${this.assignmentResourceUrl}/${i}/buildlogs`,{params:r})}static \u0275fac=function(e){return new(e||t)};static \u0275prov=o({token:t,factory:t.\u0275fac,providedIn:"root"})}return t})();export{f as a};
+//# sourceMappingURL=chunk-N4VVKRBU.js.map

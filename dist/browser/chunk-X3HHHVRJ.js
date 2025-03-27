@@ -1,0 +1,6 @@
+import{d as u}from"./chunk-EDXSOKK5.js";import{Ba as f,Oc as d}from"./chunk-Z4VHWOB5.js";import{Db as c,Oc as s,Tb as p,Zb as C,dd as n,kc as o,nc as a,rd as l,sc as m,zc as r}from"./chunk-5LC5EQRR.js";var h=e=>({color:e});function _(e,k){if(e&1&&(n(0,`
+    `),r(1,"fa-icon",0),n(2,`
+`)),e&2){let i,t=s();c(),a(l(4,h,(i=t.iconColor)!==null&&i!==void 0?i:"var(--green)")),o("icon",t.faCheckCircle)("size",t.size)}}function v(e,k){if(e&1&&(n(0,`
+    `),r(1,"fa-icon",1),n(2,`
+`)),e&2){let i,t=s();c(),a(l(4,h,(i=t.iconColor)!==null&&i!==void 0?i:"var(--markdown-preview-red)")),o("icon",t.faTimes)("size",t.size)}}var b=(()=>{class e{faTimes=d;faCheckCircle=f;checkAttribute=!1;iconColor;size;static \u0275fac=function(t){return new(t||e)};static \u0275cmp=p({type:e,selectors:[["jhi-checklist-check"]],inputs:{checkAttribute:"checkAttribute",iconColor:"iconColor",size:"size"},decls:2,vars:1,consts:[["data-testid","check-icon-checked",3,"icon","size"],["data-testid","check-icon-unchecked",1,"fs-5",3,"icon","size"]],template:function(t,x){t&1&&C(0,_,3,6)(1,v,3,6),t&2&&m(x.checkAttribute?0:1)},dependencies:[u],encapsulation:2})}return e})();export{b as a};
+//# sourceMappingURL=chunk-X3HHHVRJ.js.map

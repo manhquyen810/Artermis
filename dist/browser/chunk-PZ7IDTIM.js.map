@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/assessment-type.model.ts"],
+  "sourcesContent": ["export enum AssessmentType {\r\n    AUTOMATIC = 'AUTOMATIC',\r\n    SEMI_AUTOMATIC = 'SEMI_AUTOMATIC',\r\n    MANUAL = 'MANUAL',\r\n    AUTOMATIC_ATHENA = 'AUTOMATIC_ATHENA',\r\n}\r\n"],
+  "mappings": "AAAA,IAAYA,EAAZ,SAAYA,EAAc,CACtBA,OAAAA,EAAA,UAAA,YACAA,EAAA,eAAA,iBACAA,EAAA,OAAA,SACAA,EAAA,iBAAA,mBAJQA,CAKZ,EALYA,GAAc,CAAA,CAAA",
+  "names": ["AssessmentType"]
+}

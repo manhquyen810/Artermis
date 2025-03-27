@@ -1,0 +1,2 @@
+import{a as t}from"./chunk-3Y6745HG.js";var _=t,I=!1,R=80,e=40,A=4,c=50,r=8,n=50,s=5,L="^[0-9]{1,2}$|^100$",O="#3E8ACC",p="Content-Version",x="localvc",N="localci",S="gitlab",T="aeolus",a="atlas",P="iris",C="lti",F="athena",M="theia",G="ICER 2025 Paper a5157934-9092-4a72-addc-3aaf489debdc";export{_ as a,I as b,R as c,e as d,A as e,c as f,r as g,n as h,s as i,L as j,O as k,p as l,x as m,N as n,S as o,T as p,a as q,P as r,C as s,F as t,M as u,G as v};
+//# sourceMappingURL=chunk-VK7JPHFE.js.map

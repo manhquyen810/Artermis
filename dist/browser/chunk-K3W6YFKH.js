@@ -1,0 +1,2 @@
+import{c as s,d as c}from"./chunk-E2KBL4LX.js";import{Id as o,Jb as i,Wb as n,ya as a}from"./chunk-5LC5EQRR.js";var d=(()=>{class e{translatePipe;constructor(r,t){this.translatePipe=new c(r,t)}transform(r,t){return this.translatePipe.transform(r,t)}ngOnDestroy(){this.translatePipe.ngOnDestroy()}static \u0275fac=function(t){return new(t||e)(i(s,16),i(o,16))};static \u0275pipe=n({name:"artemisTranslate",type:e,pure:!1});static \u0275prov=a({token:e,factory:e.\u0275fac,providedIn:"root"})}return e})();export{d as a};
+//# sourceMappingURL=chunk-K3W6YFKH.js.map

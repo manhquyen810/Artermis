@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/lecture-unit/attachmentUnit.model.ts"],
+  "sourcesContent": ["import { LectureUnit, LectureUnitType } from 'app/entities/lecture-unit/lectureUnit.model';\r\nimport { Attachment } from 'app/entities/attachment.model';\r\nimport { Slide } from 'app/entities/lecture-unit/slide.model';\r\n\r\nexport class AttachmentUnit extends LectureUnit {\r\n    public description?: string;\r\n    public attachment?: Attachment;\r\n    public slides?: Slide[];\r\n    public pyrisIngestionState?: IngestionState;\r\n\r\n    constructor() {\r\n        super(LectureUnitType.ATTACHMENT);\r\n    }\r\n}\r\n\r\nexport enum IngestionState {\r\n    NOT_STARTED = 'NOT_STARTED',\r\n    IN_PROGRESS = 'IN_PROGRESS',\r\n    DONE = 'DONE',\r\n    ERROR = 'ERROR',\r\n    PARTIALLY_INGESTED = 'PARTIALLY_INGESTED',\r\n}\r\n"],
+  "mappings": "+CAIM,IAAOA,EAAP,cAA8BC,CAAW,CACpCC,YACAC,WACAC,OACAC,oBAEPC,aAAA,CACI,MAAMC,EAAgBC,UAAU,CACpC,GAGQC,EAAZ,SAAYA,EAAc,CACtBA,OAAAA,EAAA,YAAA,cACAA,EAAA,YAAA,cACAA,EAAA,KAAA,OACAA,EAAA,MAAA,QACAA,EAAA,mBAAA,qBALQA,CAMZ,EANYA,GAAc,CAAA,CAAA",
+  "names": ["AttachmentUnit", "LectureUnit", "description", "attachment", "slides", "pyrisIngestionState", "constructor", "LectureUnitType", "ATTACHMENT", "IngestionState"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/pipes/safe-html.pipe.ts"],
+  "sourcesContent": ["import { Pipe, PipeTransform, inject } from '@angular/core';\r\nimport { DomSanitizer } from '@angular/platform-browser';\r\n\r\n@Pipe({ name: 'safeHtml' })\r\nexport class SafeHtmlPipe implements PipeTransform {\r\n    private sanitizer = inject(DomSanitizer);\r\n\r\n    /**\r\n     * Bypasses the security checks for a specified HTML.\r\n     * @param value The HTML that is considered safe.\r\n     */\r\n    transform(value: any) {\r\n        return this.sanitizer.bypassSecurityTrustHtml(value);\r\n    }\r\n}\r\n"],
+  "mappings": "yFAIA,IAAaA,GAAY,IAAA,CAAnB,MAAOA,CAAY,CACbC,UAAYC,EAAOC,CAAY,EAMvCC,UAAUC,EAAU,CAChB,OAAO,KAAKJ,UAAUK,wBAAwBD,CAAK,CACvD,4CATSL,EAAY,4CAAZA,EAAYO,KAAA,EAAA,CAAA,SAAZP,CAAY,GAAA",
+  "names": ["SafeHtmlPipe", "sanitizer", "inject", "DomSanitizer", "transform", "value", "bypassSecurityTrustHtml", "pure"]
+}

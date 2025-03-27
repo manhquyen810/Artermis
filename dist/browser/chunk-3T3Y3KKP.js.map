@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/lecture-unit/videoUnit.model.ts"],
+  "sourcesContent": ["import { LectureUnit, LectureUnitType } from 'app/entities/lecture-unit/lectureUnit.model';\r\n\r\nexport class VideoUnit extends LectureUnit {\r\n    public description?: string;\r\n    // src link of a video\r\n    public source?: string;\r\n\r\n    constructor() {\r\n        super(LectureUnitType.VIDEO);\r\n    }\r\n}\r\n"],
+  "mappings": "+CAEM,IAAOA,EAAP,cAAyBC,CAAW,CAC/BC,YAEAC,OAEPC,aAAA,CACI,MAAMC,EAAgBC,KAAK,CAC/B",
+  "names": ["VideoUnit", "LectureUnit", "description", "source", "constructor", "LectureUnitType", "VIDEO"]
+}

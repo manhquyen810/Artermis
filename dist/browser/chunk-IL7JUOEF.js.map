@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/attachment.model.ts"],
+  "sourcesContent": ["import dayjs from 'dayjs/esm';\r\nimport { BaseEntity } from 'app/shared/model/base-entity';\r\nimport { Lecture } from 'app/entities/lecture.model';\r\nimport { Exercise } from 'app/entities/exercise.model';\r\nimport { AttachmentUnit } from 'app/entities/lecture-unit/attachmentUnit.model';\r\n\r\nexport const enum AttachmentType {\r\n    FILE = 'FILE',\r\n    URL = 'URL',\r\n}\r\n\r\nexport class Attachment implements BaseEntity {\r\n    id?: number;\r\n    name?: string;\r\n    link?: string;\r\n    releaseDate?: dayjs.Dayjs;\r\n    version?: number;\r\n    uploadDate?: dayjs.Dayjs;\r\n    attachmentType?: AttachmentType;\r\n    lecture?: Lecture;\r\n    exercise?: Exercise;\r\n    attachmentUnit?: AttachmentUnit;\r\n}\r\n"],
+  "mappings": "AAWM,IAAOA,EAAP,KAAiB,CACnBC,GACAC,KACAC,KACAC,YACAC,QACAC,WACAC,eACAC,QACAC,SACAC",
+  "names": ["Attachment", "id", "name", "link", "releaseDate", "version", "uploadDate", "attachmentType", "lecture", "exercise", "attachmentUnit"]
+}

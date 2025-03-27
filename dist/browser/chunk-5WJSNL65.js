@@ -1,0 +1,12 @@
+import{e as A,f as d}from"./chunk-CT44YL7Q.js";import{K as S}from"./chunk-VZRSC3LP.js";import{a as v}from"./chunk-K3W6YFKH.js";import{d as b}from"./chunk-EDXSOKK5.js";import{kb as _}from"./chunk-Z4VHWOB5.js";import{a as T}from"./chunk-U54OSGNH.js";import{Ad as y,Db as i,La as P,Oc as p,Rc as C,Tb as f,Zb as x,dd as e,fd as u,kc as h,sc as c,ud as g,xc as s,yc as a,yd as B,zc as l}from"./chunk-5LC5EQRR.js";var D=(t,r,n,o)=>({maxPoints:t,maxBonusPoints:r,maxPointsWithBonus:n,maxPercentage:o});function I(t,r){if(t&1&&(e(0,`
+        `),s(1,"span"),e(2),a(),e(3,`
+    `)),t&2){let n=p();i(2),u("/\xA0",n.maxPoints,"\xA0")}}function W(t,r){if(t&1&&(e(0,`
+        `),s(1,"span"),e(2),a(),e(3,`
+    `)),t&2){let n=p();i(2),u("(Bonus:\xA0",n.bonusPoints,")\xA0")}}function E(t,r){if(t&1&&(e(0,`
+        `),l(1,"fa-icon",2),B(2,"artemisTranslate"),e(3,`
+    `)),t&2){let n=p();i(),C("ngbTooltip",y(2,2,"artemisApp.assessment.dashboard.bonusPointExplanation",g(5,D,n.maxPoints,n.maxBonusPoints,n.maxPointsWithBonus,n.maxPercentage))),h("icon",n.faQuestionCircle)}}var q=(()=>{class t{maxBonusPoints=0;maxPoints;score;course;bonusPoints;maxPointsWithBonus;maxPercentage;faQuestionCircle=_;ngOnChanges(){this.maxPoints!=null&&this.maxBonusPoints>0?(this.score>this.maxPoints?this.bonusPoints=d(this.score-this.maxPoints,this.course):this.bonusPoints=void 0,this.maxPointsWithBonus=this.maxPoints+this.maxBonusPoints,this.maxPercentage=A(this.maxPointsWithBonus/this.maxPoints,this.course)):(this.bonusPoints=void 0,this.maxPointsWithBonus=void 0,this.maxPercentage=void 0),this.score=d(this.score,this.course)}static \u0275fac=function(o){return new(o||t)};static \u0275cmp=f({type:t,selectors:[["jhi-score-display"]],inputs:{maxBonusPoints:"maxBonusPoints",maxPoints:"maxPoints",score:"score",course:"course"},features:[P],decls:11,vars:4,consts:[[1,"display-container"],["jhiTranslate","artemisApp.modelingAssessment.points"],["placement","bottom auto",3,"icon","ngbTooltip"]],template:function(o,m){o&1&&(s(0,"div",0),e(1,`
+    `),s(2,"span"),e(3),a(),e(4,`
+    `),x(5,I,4,1),l(6,"span",1),e(7,`
+    `),x(8,W,4,1)(9,E,4,10),a(),e(10,`
+`)),o&2&&(i(3),u("",m.score||0,"\xA0"),i(2),c(m.maxPoints?5:-1),i(3),c(m.bonusPoints?8:-1),i(),c(m.maxBonusPoints?9:-1))},dependencies:[T,b,S,v],styles:[".display-container[_ngcontent-%COMP%]{display:flex}"]})}return t})();export{q as a};
+//# sourceMappingURL=chunk-5WJSNL65.js.map

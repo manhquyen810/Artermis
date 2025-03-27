@@ -1,0 +1,24 @@
+import{b as P}from"./chunk-3DNS47RB.js";import{a as I}from"./chunk-RGQYMQQL.js";import{q as M}from"./chunk-Z2YUBN6N.js";import{d as y}from"./chunk-EDXSOKK5.js";import{Tc as w,Uc as v,ia as h}from"./chunk-Z4VHWOB5.js";import{a as O}from"./chunk-U54OSGNH.js";import{Db as c,Dc as f,Ma as p,Mc as x,Na as m,Oc as d,Tb as u,Zb as C,dd as t,kc as l,sc as _,xc as o,yc as r,zc as i}from"./chunk-5LC5EQRR.js";import{h as A}from"./chunk-3E746U5Y.js";var g=A(I());function T(n,b){if(n&1){let e=f();t(0,`
+    `),o(1,"div",0),t(2,`
+        `),o(3,"div",1),i(4,"fa-icon",2),r(),t(5,`
+        `),o(6,"div",3),t(7,`
+            `),o(8,"div",4),x("click",function(){p(e);let a=d();return m(a.collapsed=!a.collapsed)}),t(9,`
+                `),o(10,"h3",5),t(11,`
+                    `),i(12,"fa-icon",2),t(13,`\xA0
+                    `),i(14,"span",6),t(15,`
+                `),r(),t(16,`
+                `),i(17,"fa-icon",2),t(18,`
+            `),r(),t(19,`
+            `),o(20,"div",7),t(21,`
+                `),i(22,"jhi-assessment-instructions",8),t(23,`
+            `),r(),t(24,`
+        `),r(),t(25,`
+    `),r(),t(26,`
+`)}if(n&2){let e=d();c(4),l("icon",e.faGripLinesVertical),c(8),l("icon",e.farListAlt),c(5),l("icon",e.faChevronRight),c(5),l("readOnly",e.readOnly)("exercise",e.exercise)("isAssessmentTraining",e.isAssessmentTraining)("showAssessmentInstructions",e.showAssessmentInstructions)}}function L(n,b){if(n&1){let e=f();t(0,`
+    `),o(1,"div",9),x("click",function(){p(e);let a=d();return m(a.collapsed=!a.collapsed)}),t(2,`
+        `),i(3,"fa-icon",2),t(4,`
+        `),i(5,"span",6),t(6,`
+        `),i(7,"fa-icon",2),t(8,`
+    `),r(),t(9,`
+`)}if(n&2){let e=d();c(3),l("icon",e.faChevronLeft),c(4),l("icon",e.faChevronLeft)}}var R=(()=>{class n{isAssessmentTraining=!1;showAssessmentInstructions=!0;exercise;collapsed=!1;readOnly;faChevronRight=v;faChevronLeft=w;faGripLinesVertical=h;farListAlt=M;ngAfterViewInit(){(0,g.default)(".expanded-instructions").resizable({edges:{left:".draggable-left",right:!1,bottom:!1,top:!1},modifiers:[g.default.modifiers.restrictSize({min:{width:215,height:0},max:{width:1e3,height:2e3}})],inertia:!0}).on("resizestart",function(e){e.target.classList.add("card-resizable")}).on("resizeend",function(e){e.target.classList.remove("card-resizable")}).on("resizemove",function(e){let s=e.target;s.style.width=e.rect.width+"px"})}static \u0275fac=function(s){return new(s||n)};static \u0275cmp=u({type:n,selectors:[["jhi-collapsable-assessment-instructions"]],inputs:{isAssessmentTraining:"isAssessmentTraining",showAssessmentInstructions:"showAssessmentInstructions",exercise:"exercise",collapsed:"collapsed",readOnly:"readOnly"},decls:2,vars:1,consts:[[1,"expanded-instructions","instructions-container"],[1,"draggable-left"],[3,"icon"],[1,"card"],[1,"card-header","text-white","bg-primary",3,"click"],[1,"card-title"],["jhiTranslate","artemisApp.assessmentInstructions.instructions.instructions"],[1,"wrapper-scroll-y","scrollbar","vh-100"],[1,"card-body","markdown-preview",3,"readOnly","exercise","isAssessmentTraining","showAssessmentInstructions"],[1,"collapsed-instructions","instructions-container","text-white","bg-primary",3,"click"]],template:function(s,a){s&1&&C(0,T,27,7)(1,L,10,2),s&2&&_(a.collapsed?1:0)},dependencies:[y,O,P],styles:[".instructions-container[_ngcontent-%COMP%]{display:flex;height:100vh}.expanded-instructions[_ngcontent-%COMP%]{width:30vw}.expanded-instructions[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]{width:100%;min-width:200px}.expanded-instructions[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]{display:flex;justify-content:space-between;align-items:center;cursor:pointer}.expanded-instructions[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]   .card-header[_ngcontent-%COMP%]   .card-title[_ngcontent-%COMP%]{display:flex}.expanded-instructions[_ngcontent-%COMP%]   .card[_ngcontent-%COMP%]   .card-body[_ngcontent-%COMP%]{overflow-y:auto}.expanded-instructions[_ngcontent-%COMP%]   .draggable-left[_ngcontent-%COMP%]{display:flex;align-items:center;justify-content:center;min-width:15px}.expanded-instructions[_ngcontent-%COMP%]   .scrollbar[_ngcontent-%COMP%]{position:relative;overflow:auto}.expanded-instructions[_ngcontent-%COMP%]   .wrapper-scroll-y[_ngcontent-%COMP%]{display:block;padding:0 .5rem}.collapsed-instructions[_ngcontent-%COMP%]{width:50px;height:170px;justify-content:space-between;flex-flow:column nowrap;margin-left:15px;cursor:pointer}.collapsed-instructions[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{writing-mode:vertical-rl;margin:auto}.collapsed-instructions[_ngcontent-%COMP%]   fa-icon[_ngcontent-%COMP%]{display:flex;justify-content:center;padding:15px 0}.expandable-header[_ngcontent-%COMP%]{cursor:pointer}.expandable-header[_ngcontent-%COMP%]   fa-icon[_ngcontent-%COMP%]{padding-left:5px}"]})}return n})();export{R as a};
+//# sourceMappingURL=chunk-7F5FYCZN.js.map

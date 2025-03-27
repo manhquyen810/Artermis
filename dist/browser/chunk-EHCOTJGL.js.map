@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/lecture.model.ts"],
+  "sourcesContent": ["import dayjs from 'dayjs/esm';\r\nimport { BaseEntity } from 'app/shared/model/base-entity';\r\nimport { Attachment } from 'app/entities/attachment.model';\r\nimport { Post } from 'app/entities/metis/post.model';\r\nimport { Course } from 'app/entities/course.model';\r\nimport { LectureUnit } from 'app/entities/lecture-unit/lectureUnit.model';\r\nimport { IngestionState } from 'app/entities/lecture-unit/attachmentUnit.model';\r\n\r\nexport class Lecture implements BaseEntity {\r\n    id?: number;\r\n    title?: string;\r\n    description?: string;\r\n    startDate?: dayjs.Dayjs;\r\n    endDate?: dayjs.Dayjs;\r\n    visibleDate?: dayjs.Dayjs;\r\n    attachments?: Attachment[];\r\n    posts?: Post[];\r\n    lectureUnits?: LectureUnit[];\r\n    course?: Course;\r\n\r\n    // helper attribute\r\n    channelName?: string;\r\n    isAtLeastEditor?: boolean;\r\n    isAtLeastInstructor?: boolean;\r\n    ingested?: IngestionState;\r\n}\r\n"],
+  "mappings": "AAQM,IAAOA,EAAP,KAAc,CAChBC,GACAC,MACAC,YACAC,UACAC,QACAC,YACAC,YACAC,MACAC,aACAC,OAGAC,YACAC,gBACAC,oBACAC",
+  "names": ["Lecture", "id", "title", "description", "startDate", "endDate", "visibleDate", "attachments", "posts", "lectureUnits", "course", "channelName", "isAtLeastEditor", "isAtLeastInstructor", "ingested"]
+}

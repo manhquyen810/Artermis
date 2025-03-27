@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/pipes/remove-keys.pipe.ts"],
+  "sourcesContent": ["import { Pipe, PipeTransform } from '@angular/core';\r\n\r\n@Pipe({ name: 'removekeys' })\r\nexport class RemoveKeysPipe implements PipeTransform {\r\n    /**\r\n     * Removes the specified keys from the array of objects.\r\n     * @param items The array of objects whose keys will be removed.\r\n     * @param keys The array with keys to be removed.\r\n     */\r\n    transform(items: Array<{ key: string; value: any }>, keys: Array<string>): any {\r\n        if (!items || !keys) {\r\n            return items;\r\n        }\r\n        return items.filter(({ key }) => !keys.includes(key));\r\n    }\r\n}\r\n"],
+  "mappings": "yCAGA,IAAaA,GAAc,IAAA,CAArB,MAAOA,CAAc,CAMvBC,UAAUC,EAA2CC,EAAmB,CACpE,MAAI,CAACD,GAAS,CAACC,EACJD,EAEJA,EAAME,OAAO,CAAC,CAAEC,IAAAA,CAAG,IAAO,CAACF,EAAKG,SAASD,CAAG,CAAC,CACxD,4CAXSL,EAAc,8CAAdA,EAAcO,KAAA,EAAA,CAAA,SAAdP,CAAc,GAAA",
+  "names": ["RemoveKeysPipe", "transform", "items", "keys", "filter", "key", "includes", "pure"]
+}

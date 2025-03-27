@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/file-upload-exercise.model.ts"],
+  "sourcesContent": ["import { Exercise, ExerciseType } from 'app/entities/exercise.model';\r\nimport { Course } from 'app/entities/course.model';\r\nimport { ExerciseGroup } from 'app/entities/exercise-group.model';\r\n\r\nexport class FileUploadExercise extends Exercise {\r\n    public filePattern?: string;\r\n    public exampleSolution?: string;\r\n\r\n    constructor(course: Course | undefined, exerciseGroup: ExerciseGroup | undefined) {\r\n        super(ExerciseType.FILE_UPLOAD);\r\n        this.course = course;\r\n        this.exerciseGroup = exerciseGroup;\r\n    }\r\n}\r\n"],
+  "mappings": "+CAIM,IAAOA,EAAP,cAAkCC,CAAQ,CACrCC,YACAC,gBAEPC,YAAYC,EAA4BC,EAAwC,CAC5E,MAAMC,EAAaC,WAAW,EAC9B,KAAKH,OAASA,EACd,KAAKC,cAAgBA,CACzB",
+  "names": ["FileUploadExercise", "Exercise", "filePattern", "exampleSolution", "constructor", "course", "exerciseGroup", "ExerciseType", "FILE_UPLOAD"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/quiz/abstract-quiz-exam-submission.model.ts", "src/main/webapp/app/entities/quiz/quiz-submission.model.ts"],
+  "sourcesContent": ["import { SubmittedAnswer } from 'app/entities/quiz/submitted-answer.model';\r\nimport { Submission, SubmissionExerciseType } from 'app/entities/submission.model';\r\n\r\nexport abstract class AbstractQuizSubmission extends Submission {\r\n    public scoreInPoints?: number;\r\n    public submittedAnswers?: SubmittedAnswer[];\r\n\r\n    protected constructor(type: SubmissionExerciseType) {\r\n        super(type);\r\n    }\r\n}\r\n", "import { SubmissionExerciseType } from 'app/entities/submission.model';\r\nimport { AbstractQuizSubmission } from 'app/entities/quiz/abstract-quiz-exam-submission.model';\r\n\r\nexport class QuizSubmission extends AbstractQuizSubmission {\r\n    constructor() {\r\n        super(SubmissionExerciseType.QUIZ);\r\n    }\r\n}\r\n"],
+  "mappings": "wCAGM,IAAgBA,EAAhB,cAA+CC,CAAU,CACpDC,cACAC,iBAEPC,YAAsBC,EAA4B,CAC9C,MAAMA,CAAI,CACd,GCNE,IAAOC,EAAP,cAA8BC,CAAsB,CACtDC,aAAA,CACI,MAAK,MAAA,CACT",
+  "names": ["AbstractQuizSubmission", "Submission", "scoreInPoints", "submittedAnswers", "constructor", "type", "QuizSubmission", "AbstractQuizSubmission", "constructor"]
+}

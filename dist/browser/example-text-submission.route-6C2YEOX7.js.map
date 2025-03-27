@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/text/manage/example-text-submission/example-text-submission.route.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\r\nimport { UserRouteAccessService } from 'app/core/auth/user-route-access-service';\r\n\r\nimport { Authority } from 'app/shared/constants/authority.constants';\r\n\r\nexport const exampleTextSubmissionRoute: Routes = [\r\n    {\r\n        path: '',\r\n        loadComponent: () => import('./example-text-submission.component').then((m) => m.ExampleTextSubmissionComponent),\r\n        data: {\r\n            authorities: [Authority.ADMIN, Authority.INSTRUCTOR, Authority.EDITOR, Authority.TA],\r\n            pageTitle: 'artemisApp.exampleSubmission.home.editor',\r\n        },\r\n        canActivate: [UserRouteAccessService],\r\n    },\r\n];\r\n"],
+  "mappings": "4pBAKO,IAAMA,EAAqC,CAC9C,CACIC,KAAM,GACNC,cAAeA,IAAM,OAAO,iDAAqC,EAAEC,KAAMC,GAAMA,EAAEC,8BAA8B,EAC/GC,KAAM,CACFC,YAAa,CAACC,EAAUC,MAAOD,EAAUE,WAAYF,EAAUG,OAAQH,EAAUI,EAAE,EACnFC,UAAW,4CAEfC,YAAa,CAACC,CAAsB,EACvC",
+  "names": ["exampleTextSubmissionRoute", "path", "loadComponent", "then", "m", "ExampleTextSubmissionComponent", "data", "authorities", "Authority", "ADMIN", "INSTRUCTOR", "EDITOR", "TA", "pageTitle", "canActivate", "UserRouteAccessService"]
+}

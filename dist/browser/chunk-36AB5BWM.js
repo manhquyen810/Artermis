@@ -1,0 +1,2 @@
+import{b as s}from"./chunk-XUCCGZJR.js";import{Ea as o,ya as t}from"./chunk-5LC5EQRR.js";var l=(()=>{class e{sessionStorage=o(s);storeUrl(r){this.sessionStorage.store("previousUrl",r)}getUrl(){return this.sessionStorage.retrieve("previousUrl")}static \u0275fac=function(i){return new(i||e)};static \u0275prov=t({token:e,factory:e.\u0275fac,providedIn:"root"})}return e})();export{l as a};
+//# sourceMappingURL=chunk-36AB5BWM.js.map

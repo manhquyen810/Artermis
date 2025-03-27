@@ -1,0 +1,2 @@
+import{g as r,ya as i}from"./chunk-5LC5EQRR.js";var s=(()=>{class e{sidebarCardClickedEvent=new r(null);emitSidebarCardEvent(t){this.sidebarCardClickedEvent.next(t)}emitResetValue(){this.sidebarCardClickedEvent.next(null)}sidebarCardEventListener(){return this.sidebarCardClickedEvent.asObservable()}static \u0275fac=function(a){return new(a||e)};static \u0275prov=i({token:e,factory:e.\u0275fac,providedIn:"root"})}return e})();export{s as a};
+//# sourceMappingURL=chunk-L7AAAQDH.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/statistics-graph/statistics-graph.utils.ts"],
+  "sourcesContent": ["/**\r\n * Formats the labels on the y-axis in order to display only integer values\r\n * @param tick the default y-axis tick\r\n * @returns modified y-axis tick\r\n */\r\nexport function yAxisTickFormatting(tick: string): string {\r\n    return parseFloat(tick).toFixed(0);\r\n}\r\n\r\n/**\r\n * Appends a percentage sign to the y-axis tick\r\n * @param tick the default tick\r\n * @returns {{ tick }}%\r\n */\r\nexport function axisTickFormattingWithPercentageSign(tick: string): string {\r\n    return tick + '%';\r\n}\r\n"],
+  "mappings": "AAKM,SAAUA,EAAoBC,EAAY,CAC5C,OAAOC,WAAWD,CAAI,EAAEE,QAAQ,CAAC,CACrC,CAOM,SAAUC,EAAqCH,EAAY,CAC7D,OAAOA,EAAO,GAClB",
+  "names": ["yAxisTickFormatting", "tick", "parseFloat", "toFixed", "axisTickFormattingWithPercentageSign"]
+}

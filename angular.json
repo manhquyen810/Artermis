@@ -57,10 +57,7 @@
                   "webcola",
                   "webstomp-client"
             ],
-            "outputPath": {
-                "base": "build/resources/main/static/",
-                "browser": ""
-            },
+            "outputPath": "dist",
             "loader": {
                 ".ttf": "file"
             },

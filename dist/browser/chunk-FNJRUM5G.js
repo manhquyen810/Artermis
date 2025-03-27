@@ -1,0 +1,2 @@
+import{ya as o}from"./chunk-5LC5EQRR.js";var a=(()=>{class r{WORD_MATCH_REGEX=/[\w\u00C0-\u00ff]+/g;countWords(t){let e=0;if(t){let n=t.match(this.WORD_MATCH_REGEX);n&&(e=n.length)}return e}countCharacters(t){return t?t.length:0}static \u0275fac=function(e){return new(e||r)};static \u0275prov=o({token:r,factory:r.\u0275fac,providedIn:"root"})}return r})();export{a};
+//# sourceMappingURL=chunk-FNJRUM5G.js.map

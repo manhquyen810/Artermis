@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/pipes/search-filter.pipe.ts"],
+  "sourcesContent": ["import { Pipe, PipeTransform } from '@angular/core';\r\n\r\n@Pipe({ name: 'searchFilter' })\r\nexport class SearchFilterPipe implements PipeTransform {\r\n    transform(array: any[] | undefined, fields: string[], value: string): any[] {\r\n        if (!Array.isArray(array)) {\r\n            return [];\r\n        }\r\n        return array?.filter((element) => {\r\n            if (!element) {\r\n                return false;\r\n            }\r\n            return fields.some((field) => {\r\n                const elementValue = element[field];\r\n                return elementValue && typeof elementValue === 'string' ? elementValue.toLowerCase().includes(value?.toLowerCase()) : false;\r\n            });\r\n        });\r\n    }\r\n}\r\n"],
+  "mappings": "yCAGA,IAAaA,GAAgB,IAAA,CAAvB,MAAOA,CAAgB,CACzBC,UAAUC,EAA0BC,EAAkBC,EAAa,CAC/D,OAAKC,MAAMC,QAAQJ,CAAK,EAGjBA,GAAOK,OAAQC,GACbA,EAGEL,EAAOM,KAAMC,GAAS,CACzB,IAAMC,EAAeH,EAAQE,CAAK,EAClC,OAAOC,GAAgB,OAAOA,GAAiB,SAAWA,EAAaC,YAAW,EAAGC,SAAST,GAAOQ,YAAW,CAAE,EAAI,EAC1H,CAAC,EALU,EAMd,EAVU,CAAA,CAWf,4CAdSZ,EAAgB,gDAAhBA,EAAgBc,KAAA,EAAA,CAAA,SAAhBd,CAAgB,GAAA",
+  "names": ["SearchFilterPipe", "transform", "array", "fields", "value", "Array", "isArray", "filter", "element", "some", "field", "elementValue", "toLowerCase", "includes", "pure"]
+}

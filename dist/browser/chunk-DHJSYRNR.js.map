@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/quiz/manage/statistics/quiz-statistic/quiz-statistics.utils.ts"],
+  "sourcesContent": ["import { QuizExercise } from 'app/entities/quiz/quiz-exercise.model';\r\n\r\n/**\r\n * calculate the maximal  possible Score for the quiz\r\n * @param quizExercise the exercise the score should be computed\r\n * @return (int): sum over the Scores of all questions\r\n */\r\nexport function calculateMaxScore(quizExercise: QuizExercise) {\r\n    let result = 0;\r\n\r\n    if (quizExercise.quizQuestions) {\r\n        quizExercise.quizQuestions.forEach(function (question) {\r\n            result = result + question.points!;\r\n        });\r\n    } else {\r\n        result = quizExercise.maxPoints!;\r\n    }\r\n    return result;\r\n}\r\n"],
+  "mappings": "AAOM,SAAUA,EAAkBC,EAA0B,CACxD,IAAIC,EAAS,EAEb,OAAID,EAAaE,cACbF,EAAaE,cAAcC,QAAQ,SAAUC,EAAQ,CACjDH,EAASA,EAASG,EAASC,MAC/B,CAAC,EAEDJ,EAASD,EAAaM,UAEnBL,CACX",
+  "names": ["calculateMaxScore", "quizExercise", "result", "quizQuestions", "forEach", "question", "points", "maxPoints"]
+}

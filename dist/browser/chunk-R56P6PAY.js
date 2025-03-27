@@ -1,0 +1,2 @@
+import{c as n}from"./chunk-CK7FH6VF.js";import{Ea as o,ra as c,s as a,ya as s}from"./chunk-5LC5EQRR.js";var l=(()=>{class e{exerciseService=o(n);latestDueDateByExerciseId=new Map;getLatestDueDate(t){let r=this.latestDueDateByExerciseId.get(t);return r?a(r):this.exerciseService.getLatestDueDate(t).pipe(c(i=>{i&&this.latestDueDateByExerciseId.set(t,i)}))}static \u0275fac=function(r){return new(r||e)};static \u0275prov=s({token:e,factory:e.\u0275fac})}return e})();export{l as a};
+//# sourceMappingURL=chunk-R56P6PAY.js.map

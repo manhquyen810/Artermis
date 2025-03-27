@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/tutorial-group/tutorial-group-schedule.model.ts"],
+  "sourcesContent": ["import { BaseEntity } from 'app/shared/model/base-entity';\r\nimport { TutorialGroup } from 'app/entities/tutorial-group/tutorial-group.model';\r\nimport { TutorialGroupSession } from 'app/entities/tutorial-group/tutorial-group-session.model';\r\nimport dayjs from 'dayjs/esm';\r\n\r\nexport class TutorialGroupSchedule implements BaseEntity {\r\n    public id?: number;\r\n    public tutorialGroup?: TutorialGroup;\r\n    public dayOfWeek?: number;\r\n    public startTime?: string;\r\n    public endTime?: string;\r\n    public repetitionFrequency?: number;\r\n    public location?: string;\r\n    public validFromInclusive?: dayjs.Dayjs;\r\n    public validToInclusive?: dayjs.Dayjs;\r\n    public tutorialGroupSessions?: TutorialGroupSession[];\r\n}\r\n"],
+  "mappings": "AAKM,IAAOA,EAAP,KAA4B,CACvBC,GACAC,cACAC,UACAC,UACAC,QACAC,oBACAC,SACAC,mBACAC,iBACAC",
+  "names": ["TutorialGroupSchedule", "id", "tutorialGroup", "dayOfWeek", "startTime", "endTime", "repetitionFrequency", "location", "validFromInclusive", "validToInclusive", "tutorialGroupSessions"]
+}

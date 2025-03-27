@@ -1,0 +1,2 @@
+import"./chunk-3E746U5Y.js";var t=[{path:"instructors",loadComponent:()=>import("./feature-overview.component-B6EU7D36.js").then(e=>e.FeatureOverviewComponent),data:{pageTitle:"featureOverview.instructor.pageTitle"}},{path:"students",loadComponent:()=>import("./feature-overview.component-B6EU7D36.js").then(e=>e.FeatureOverviewComponent),data:{pageTitle:"featureOverview.students.pageTitle"}}];export{t as routes};
+//# sourceMappingURL=feature-overview.route-XNRS5S6W.js.map

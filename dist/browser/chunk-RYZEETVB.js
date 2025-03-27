@@ -1,0 +1,2 @@
+import{O as n}from"./chunk-IOA4DPXY.js";import{Ea as o,ya as r}from"./chunk-5LC5EQRR.js";var f=(()=>{class t{http=o(n);find(e){return this.http.get(`api/assessment/feedbacks/${e}/long-feedback`,{observe:"response",responseType:"text"})}static \u0275fac=function(s){return new(s||t)};static \u0275prov=r({token:t,factory:t.\u0275fac,providedIn:"root"})}return t})();export{f as a};
+//# sourceMappingURL=chunk-RYZEETVB.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/shared/exercise-scores/exercise-scores.route.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\r\nimport { ExerciseScoresComponent } from 'app/exercises/shared/exercise-scores/exercise-scores.component';\r\nimport { UserRouteAccessService } from 'app/core/auth/user-route-access-service';\r\nimport { Authority } from 'app/shared/constants/authority.constants';\r\nimport { exerciseTypes } from 'app/entities/exercise.model';\r\n\r\nexport const routes: Routes = [\r\n    ...exerciseTypes.map((exerciseType) => {\r\n        return {\r\n            path: exerciseType + '-exercises/:exerciseId/scores',\r\n            component: ExerciseScoresComponent,\r\n            data: {\r\n                authorities: [Authority.ADMIN, Authority.INSTRUCTOR, Authority.EDITOR, Authority.TA],\r\n                pageTitle: 'artemisApp.instructorDashboard.exerciseDashboard',\r\n            },\r\n            canActivate: [UserRouteAccessService],\r\n        };\r\n    }),\r\n];\r\n"],
+  "mappings": "osGAMO,IAAMA,EAAiB,CAC1B,GAAGC,EAAcC,IAAKC,IACX,CACHC,KAAMD,EAAe,gCACrBE,UAAWC,EACXC,KAAM,CACFC,YAAa,CAACC,EAAUC,MAAOD,EAAUE,WAAYF,EAAUG,OAAQH,EAAUI,EAAE,EACnFC,UAAW,oDAEfC,YAAa,CAACC,CAAsB,GAE3C,CAAC",
+  "names": ["routes", "exerciseTypes", "map", "exerciseType", "path", "component", "ExerciseScoresComponent", "data", "authorities", "Authority", "ADMIN", "INSTRUCTOR", "EDITOR", "TA", "pageTitle", "canActivate", "UserRouteAccessService"]
+}

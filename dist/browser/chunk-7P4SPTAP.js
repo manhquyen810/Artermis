@@ -1,0 +1,2 @@
+import{a as r}from"./chunk-2UXGFGK3.js";import{b as e}from"./chunk-BDII35IB.js";import{Vb as t}from"./chunk-5LC5EQRR.js";var s=(()=>{class i{ngxChartLabels;ngxData=[];ngxColor={name:"similarity distribution",selectable:!0,group:e.Ordinal,domain:[]};yAxisTickFormatting=r;static \u0275fac=function(a){return new(a||i)};static \u0275dir=t({type:i})}return i})();export{s as a};
+//# sourceMappingURL=chunk-7P4SPTAP.js.map

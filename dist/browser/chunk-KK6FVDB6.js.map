@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/pipes/safe-resource-url.pipe.ts"],
+  "sourcesContent": ["import { Pipe, PipeTransform, inject } from '@angular/core';\r\nimport { DomSanitizer } from '@angular/platform-browser';\r\n\r\n@Pipe({ name: 'safeResourceUrl' })\r\nexport class SafeResourceUrlPipe implements PipeTransform {\r\n    private sanitizer = inject(DomSanitizer);\r\n\r\n    /**\r\n     * Pipe that can be used to bypass security for a resource url, e.g. for `<script src>`, or `<iframe src>`.\r\n     * @param value The resource to bypass security check.\r\n     */\r\n    transform(value: any) {\r\n        return this.sanitizer.bypassSecurityTrustResourceUrl(value);\r\n    }\r\n}\r\n"],
+  "mappings": "yFAIA,IAAaA,GAAmB,IAAA,CAA1B,MAAOA,CAAmB,CACpBC,UAAYC,EAAOC,CAAY,EAMvCC,UAAUC,EAAU,CAChB,OAAO,KAAKJ,UAAUK,+BAA+BD,CAAK,CAC9D,4CATSL,EAAmB,mDAAnBA,EAAmBO,KAAA,EAAA,CAAA,SAAnBP,CAAmB,GAAA",
+  "names": ["SafeResourceUrlPipe", "sanitizer", "inject", "DomSanitizer", "transform", "value", "bypassSecurityTrustResourceUrl", "pure"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/pipes/truncate.pipe.ts"],
+  "sourcesContent": ["import { Pipe, PipeTransform } from '@angular/core';\r\n\r\n@Pipe({ name: 'truncate' })\r\nexport class TruncatePipe implements PipeTransform {\r\n    /**\r\n     * Truncate a given text.\r\n     * @param value The text to be truncated.\r\n     * @param limit The length of the truncated text. The default value is 25 chars.\r\n     * @param completeWords Whether or not to maintain the complete word. The default is false.\r\n     * @param ellipsis The symbol to show truncation. Default symbol is '...'\r\n     */\r\n    transform(value: string, limit = 25, completeWords = false, ellipsis = '...') {\r\n        if (completeWords) {\r\n            if (value.slice(0, limit).indexOf(' ') >= 0) {\r\n                limit = value.slice(0, limit).lastIndexOf(' ');\r\n            }\r\n        }\r\n        if (value.length <= limit) {\r\n            ellipsis = '';\r\n        }\r\n        return `${value.slice(0, limit)}${ellipsis}`;\r\n    }\r\n}\r\n"],
+  "mappings": "yCAGA,IAAaA,GAAY,IAAA,CAAnB,MAAOA,CAAY,CAQrBC,UAAUC,EAAeC,EAAQ,GAAIC,EAAgB,GAAOC,EAAW,MAAK,CACxE,OAAID,GACIF,EAAMI,MAAM,EAAGH,CAAK,EAAEI,QAAQ,GAAG,GAAK,IACtCJ,EAAQD,EAAMI,MAAM,EAAGH,CAAK,EAAEK,YAAY,GAAG,GAGjDN,EAAMO,QAAUN,IAChBE,EAAW,IAER,GAAGH,EAAMI,MAAM,EAAGH,CAAK,CAAC,GAAGE,CAAQ,EAC9C,4CAlBSL,EAAY,4CAAZA,EAAYU,KAAA,EAAA,CAAA,SAAZV,CAAY,GAAA",
+  "names": ["TruncatePipe", "transform", "value", "limit", "completeWords", "ellipsis", "slice", "indexOf", "lastIndexOf", "length", "pure"]
+}

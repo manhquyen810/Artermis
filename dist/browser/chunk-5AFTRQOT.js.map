@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/form/shortname-validator.directive.ts"],
+  "sourcesContent": ["import { AbstractControl, ValidatorFn } from '@angular/forms';\r\n\r\n/**\r\n * Validator for the required regex pattern\r\n * @param regex Regex expression\r\n */\r\nexport function regexValidator(regex: RegExp): ValidatorFn {\r\n    return (control: AbstractControl): { [key: string]: any } | null => {\r\n        const allowed = regex.test(control.value);\r\n        return allowed ? null : { forbidden: { value: control.value } };\r\n    };\r\n}\r\n"],
+  "mappings": "AAMM,SAAUA,EAAeC,EAAa,CACxC,OAAQC,GACYD,EAAME,KAAKD,EAAQE,KAAK,EACvB,KAAO,CAAEC,UAAW,CAAED,MAAOF,EAAQE,KAAK,CAAE,CAErE",
+  "names": ["regexValidator", "regex", "control", "test", "value", "forbidden"]
+}

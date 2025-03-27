@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/system-notification.model.ts"],
+  "sourcesContent": ["import dayjs from 'dayjs/esm';\r\nimport { Notification, NotificationType } from 'app/entities/notification.model';\r\nimport { Post } from 'app/entities/metis/post.model';\r\n\r\nexport const enum SystemNotificationType {\r\n    WARNING = 'WARNING',\r\n    INFO = 'INFO',\r\n}\r\n\r\nexport class SystemNotification extends Notification {\r\n    public expireDate?: dayjs.Dayjs;\r\n    public type?: SystemNotificationType;\r\n\r\n    constructor() {\r\n        super(NotificationType.SYSTEM);\r\n    }\r\n}\r\n\r\nexport class ConversationNotification extends Notification {\r\n    public message: Post;\r\n\r\n    constructor() {\r\n        super(NotificationType.CONVERSATION);\r\n    }\r\n}\r\n"],
+  "mappings": "+CASM,IAAOA,EAAP,cAAkCC,CAAY,CACzCC,WACAC,KAEPC,aAAA,CACI,MAAMC,EAAiBC,MAAM,CACjC",
+  "names": ["SystemNotification", "Notification", "expireDate", "type", "constructor", "NotificationType", "SYSTEM"]
+}

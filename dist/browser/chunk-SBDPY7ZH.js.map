@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/orion/orion-filter.directive.ts"],
+  "sourcesContent": ["import { Directive, ElementRef, Input, OnInit, inject } from '@angular/core';\r\nimport { isOrion } from 'app/shared/orion/orion';\r\n\r\n@Directive({ selector: '[jhiOrionFilter]' })\r\nexport class OrionFilterDirective implements OnInit {\r\n    private el = inject(ElementRef);\r\n\r\n    @Input() showInOrionWindow: boolean;\r\n\r\n    ngOnInit(): void {\r\n        if ((!this.showInOrionWindow && isOrion) || (this.showInOrionWindow && !isOrion)) {\r\n            this.el.nativeElement.style.display = 'none';\r\n        }\r\n    }\r\n}\r\n"],
+  "mappings": "iGAIA,IAAaA,GAAoB,IAAA,CAA3B,MAAOA,CAAoB,CACrBC,GAAKC,EAAOC,CAAU,EAErBC,kBAETC,UAAQ,EACC,CAAC,KAAKD,mBAAqBE,GAAa,KAAKF,mBAAqB,CAACE,KACpE,KAAKL,GAAGM,cAAcC,MAAMC,QAAU,OAE9C,4CATST,EAAoB,2BAApBA,EAAoBU,UAAA,CAAA,CAAA,GAAA,iBAAA,EAAA,CAAA,EAAAC,OAAA,CAAAP,kBAAA,mBAAA,CAAA,CAAA,SAApBJ,CAAoB,GAAA",
+  "names": ["OrionFilterDirective", "el", "inject", "ElementRef", "showInOrionWindow", "ngOnInit", "isOrion", "nativeElement", "style", "display", "selectors", "inputs"]
+}

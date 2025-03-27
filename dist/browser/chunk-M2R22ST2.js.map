@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/text/text-submission.model.ts"],
+  "sourcesContent": ["import { TextBlock } from 'app/entities/text/text-block.model';\r\nimport { Submission, SubmissionExerciseType } from 'app/entities/submission.model';\r\nimport { Language } from 'app/entities/course.model';\r\n\r\nexport class TextSubmission extends Submission {\r\n    public text?: string;\r\n    public blocks?: TextBlock[];\r\n    public language?: Language;\r\n\r\n    constructor() {\r\n        super(SubmissionExerciseType.TEXT);\r\n    }\r\n}\r\n"],
+  "mappings": "wCAIM,IAAOA,EAAP,cAA8BC,CAAU,CACnCC,KACAC,OACAC,SAEPC,aAAA,CACI,MAAK,MAAA,CACT",
+  "names": ["TextSubmission", "Submission", "text", "blocks", "language", "constructor"]
+}

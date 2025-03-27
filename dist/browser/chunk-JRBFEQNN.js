@@ -1,0 +1,2 @@
+import{a as o}from"./chunk-DIZEKHOC.js";import{Ea as i,Wb as n}from"./chunk-5LC5EQRR.js";var s=(()=>{class r{markdownService=i(o);transform(t,e=[],a=void 0,m=void 0){return this.markdownService.safeHtmlForMarkdown(t,e,a,m)}static \u0275fac=function(e){return new(e||r)};static \u0275pipe=n({name:"htmlForMarkdown",type:r,pure:!0})}return r})();export{s as a};
+//# sourceMappingURL=chunk-JRBFEQNN.js.map

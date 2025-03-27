@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/modeling-submission.model.ts"],
+  "sourcesContent": ["import { Submission, SubmissionExerciseType } from 'app/entities/submission.model';\r\n\r\nexport class ModelElementCount {\r\n    elementId: string;\r\n    numberOfOtherElements: number;\r\n}\r\n\r\nexport class ModelingSubmission extends Submission {\r\n    public model?: string;\r\n    public explanationText?: string;\r\n    public similarElements?: ModelElementCount[];\r\n    constructor() {\r\n        super(SubmissionExerciseType.MODELING);\r\n    }\r\n}\r\n"],
+  "mappings": "wCAOM,IAAOA,EAAP,cAAkCC,CAAU,CACvCC,MACAC,gBACAC,gBACPC,aAAA,CACI,MAAK,UAAA,CACT",
+  "names": ["ModelingSubmission", "Submission", "model", "explanationText", "similarElements", "constructor"]
+}

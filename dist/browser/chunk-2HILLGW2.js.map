@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/organization.model.ts"],
+  "sourcesContent": ["import { BaseEntity } from 'app/shared/model/base-entity';\r\nimport { User } from 'app/core/user/user.model';\r\nimport { Course } from 'app/entities/course.model';\r\n\r\nexport class Organization implements BaseEntity {\r\n    id?: number;\r\n    name?: string;\r\n    shortName?: string;\r\n    url?: string;\r\n    description?: string;\r\n    logoUrl?: string;\r\n    emailPattern?: string;\r\n    users?: User[];\r\n    courses?: Course[];\r\n    numberOfUsers?: number;\r\n    numberOfCourses?: number;\r\n}\r\n"],
+  "mappings": "AAIM,IAAOA,EAAP,KAAmB,CACrBC,GACAC,KACAC,UACAC,IACAC,YACAC,QACAC,aACAC,MACAC,QACAC,cACAC",
+  "names": ["Organization", "id", "name", "shortName", "url", "description", "logoUrl", "emailPattern", "users", "courses", "numberOfUsers", "numberOfCourses"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/shared/structured-grading-criterion/grading-criterion.model.ts"],
+  "sourcesContent": ["import { BaseEntity } from 'app/shared/model/base-entity';\r\nimport { GradingInstruction } from 'app/exercises/shared/structured-grading-criterion/grading-instruction.model';\r\n\r\nexport class GradingCriterion implements BaseEntity {\r\n    public id?: number;\r\n    public title: string;\r\n    public structuredGradingInstructions: GradingInstruction[];\r\n}\r\n"],
+  "mappings": "AAGM,IAAOA,EAAP,KAAuB,CAClBC,GACAC,MACAC",
+  "names": ["GradingCriterion", "id", "title", "structuredGradingInstructions"]
+}

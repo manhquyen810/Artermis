@@ -1,0 +1,2 @@
+var r=function(e){return e.NONE="none",e.LOCK_REPOSITORY="lock_repository",e.SUBMISSION_PENALTY="submission_penalty",e}(r||{}),t=class{id;programmingExercise;active;submissionLimit;exceedingPenalty;type;constructor(c){this.type=c}},n=class extends t{constructor(){super(r.LOCK_REPOSITORY),this.exceedingPenalty=void 0}},s=class extends t{constructor(){super(r.SUBMISSION_PENALTY)}};export{r as a,n as b,s as c};
+//# sourceMappingURL=chunk-VDG3BHQZ.js.map

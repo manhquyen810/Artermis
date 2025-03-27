@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/shared/plagiarism/plagiarism-run-details/plagiarism-and-tutor-effort.directive.ts"],
+  "sourcesContent": ["import { Directive } from '@angular/core';\r\nimport { Color, ScaleType } from '@swimlane/ngx-charts';\r\nimport { yAxisTickFormatting } from 'app/shared/statistics-graph/statistics-graph.utils';\r\nimport { NgxChartsSingleSeriesDataEntry } from 'app/shared/chart/ngx-charts-datatypes';\r\n\r\n@Directive()\r\nexport abstract class PlagiarismAndTutorEffortDirective {\r\n    ngxChartLabels: string[];\r\n    /**\r\n     * The similarity distribution is visualized in a bar chart.\r\n     */\r\n    ngxData: NgxChartsSingleSeriesDataEntry[] = [];\r\n    ngxColor = {\r\n        name: 'similarity distribution',\r\n        selectable: true,\r\n        group: ScaleType.Ordinal,\r\n        domain: [],\r\n    } as Color;\r\n    readonly yAxisTickFormatting = yAxisTickFormatting;\r\n}\r\n"],
+  "mappings": "yHAMA,IAAsBA,GAAiC,IAAA,CAAjD,MAAgBA,CAAiC,CACnDC,eAIAC,QAA4C,CAAA,EAC5CC,SAAW,CACPC,KAAM,0BACNC,WAAY,GACZC,MAAOC,EAAUC,QACjBC,OAAQ,CAAA,GAEHC,oBAAsBA,6CAZbV,EAAiC,2BAAjCA,CAAiC,CAAA,SAAjCA,CAAiC,GAAA",
+  "names": ["PlagiarismAndTutorEffortDirective", "ngxChartLabels", "ngxData", "ngxColor", "name", "selectable", "group", "ScaleType", "Ordinal", "domain", "yAxisTickFormatting"]
+}

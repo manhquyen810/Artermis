@@ -1,0 +1,2 @@
+import{L as r}from"./chunk-IOA4DPXY.js";var f=t=>{let s=new r;return t&&(Object.keys(t).forEach(o=>{o!=="sort"&&(s=s.set(o,t[o]))}),t.sort&&t.sort.forEach(o=>{s=s.append("sort",o)})),s},p=(t,s)=>{let o=new r;return t&&(Object.keys(t).forEach(i=>{if(i!=="sort"){let n=s?`${s}.${i}`:i;o=o.set(n,t[i])}}),t.sort&&t.sort.forEach(i=>{let n=s?`${s}.sort`:"sort";o=o.append(n,i)})),o};export{f as a,p as b};
+//# sourceMappingURL=chunk-G3JOQOSD.js.map

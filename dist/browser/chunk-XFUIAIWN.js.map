@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/constants/score-type.constants.ts"],
+  "sourcesContent": ["export enum ScoreType {\r\n    ABSOLUTE_SCORE = 'absoluteScore',\r\n    RELATIVE_SCORE = 'relativeScore',\r\n    MAX_POINTS = 'maxPoints',\r\n    PRESENTATION_SCORE = 'presentationScore',\r\n    REACHABLE_POINTS = 'reachablePoints',\r\n    CURRENT_RELATIVE_SCORE = 'currentRelativeScore',\r\n    REACHABLE_PRESENTATION_POINTS = 'reachablePresentationPoints',\r\n}\r\n"],
+  "mappings": "AAAA,IAAYA,EAAZ,SAAYA,EAAS,CACjBA,OAAAA,EAAA,eAAA,gBACAA,EAAA,eAAA,gBACAA,EAAA,WAAA,YACAA,EAAA,mBAAA,oBACAA,EAAA,iBAAA,kBACAA,EAAA,uBAAA,uBACAA,EAAA,8BAAA,8BAPQA,CAQZ,EARYA,GAAS,CAAA,CAAA",
+  "names": ["ScoreType"]
+}

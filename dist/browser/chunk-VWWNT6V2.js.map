@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/lecture-unit/onlineUnit.model.ts"],
+  "sourcesContent": ["import { LectureUnit, LectureUnitType } from 'app/entities/lecture-unit/lectureUnit.model';\r\n\r\nexport class OnlineUnit extends LectureUnit {\r\n    public description?: string;\r\n    public source?: string;\r\n\r\n    constructor() {\r\n        super(LectureUnitType.ONLINE);\r\n    }\r\n}\r\n"],
+  "mappings": "+CAEM,IAAOA,EAAP,cAA0BC,CAAW,CAChCC,YACAC,OAEPC,aAAA,CACI,MAAMC,EAAgBC,MAAM,CAChC",
+  "names": ["OnlineUnit", "LectureUnit", "description", "source", "constructor", "LectureUnitType", "ONLINE"]
+}

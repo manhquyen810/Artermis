@@ -1,0 +1,46 @@
+import{a as K}from"./chunk-23KTXLIV.js";import{a as R}from"./chunk-JZVTXCJO.js";import{a as J}from"./chunk-5VL4PADI.js";import"./chunk-PH44QM5B.js";import"./chunk-GERFCPB6.js";import{d as Q}from"./chunk-AR57MWOI.js";import"./chunk-A5PTZAPN.js";import"./chunk-AU6UEH3U.js";import"./chunk-FGAONQTL.js";import"./chunk-HQ6UGNQX.js";import"./chunk-ZLJ76G5I.js";import"./chunk-MLVGKM2P.js";import"./chunk-CK7FH6VF.js";import"./chunk-PUNMJFMR.js";import"./chunk-R75LTV62.js";import{c as L}from"./chunk-5MVJAZRV.js";import"./chunk-XBLNBTXN.js";import"./chunk-G3JOQOSD.js";import"./chunk-G4I63THF.js";import"./chunk-PZ7IDTIM.js";import"./chunk-YLNI6ED3.js";import"./chunk-ZFM7LHJQ.js";import"./chunk-5YQ3ACZE.js";import"./chunk-EELXLOHY.js";import{K as M,L as k}from"./chunk-VZRSC3LP.js";import"./chunk-5SKDOIBQ.js";import"./chunk-WA5GEAJB.js";import"./chunk-VK7JPHFE.js";import"./chunk-5GXY5RYT.js";import{a as W}from"./chunk-K3W6YFKH.js";import{c as z}from"./chunk-JXJXC4DZ.js";import{d as q,f as H}from"./chunk-EDXSOKK5.js";import"./chunk-R5BZWVRQ.js";import"./chunk-DID2YGL7.js";import"./chunk-CXQURQM5.js";import"./chunk-S4QLGR2R.js";import{Pb as $,Sc as N,ic as P,kb as D,yb as U}from"./chunk-Z4VHWOB5.js";import"./chunk-XUCCGZJR.js";import"./chunk-HKBU2OOC.js";import"./chunk-5ZXXURLP.js";import"./chunk-NOBD5HSR.js";import{a as G}from"./chunk-U54OSGNH.js";import"./chunk-M6Z6DKZQ.js";import"./chunk-3Y6745HG.js";import"./chunk-E2KBL4LX.js";import"./chunk-PZTBTDSR.js";import{E as V,n as O}from"./chunk-IOA4DPXY.js";import{Bd as F,Db as c,Dc as w,Ea as S,Ma as h,Mc as _,Na as x,Oc as p,Rc as A,Sc as B,Tb as j,Zb as C,dd as t,kc as u,qd as T,rd as b,sc as d,uc as v,vc as g,wc as y,xc as s,yc as a,yd as f,zc as m,zd as I}from"./chunk-5LC5EQRR.js";import"./chunk-3E746U5Y.js";var X=()=>["title"],Z=i=>({"text-secondary":i}),ee=i=>({param:i});function te(i,l){if(i&1){let e=w();t(0,`
+                `),s(1,"div",6),t(2,`
+                    `),s(3,"div",7),t(4,`
+                        `),s(5,"a",8),_("click",function(){h(e);let r=p(2);return x(r.onSort())}),t(6,`
+                            `),m(7,"fa-icon",9),t(8,`
+                            `),m(9,"span",10),t(10,`
+                        `),a(),t(11,`
+                    `),a(),t(12,`
+                    `),s(13,"jhi-search-filter",11),_("newSearchEvent",function(r){h(e);let o=p(2);return x(o.setSearchValue(r))}),a(),t(14,`
+                `),a(),t(15,`
+            `)}if(i&2){let e=p(2);c(7),u("icon",e.isSortAscending?e.faArrowDown19:e.faArrowUp19)}}function ie(i,l){if(i&1&&(t(0,`
+                                    `),s(1,"div",18),t(2,`
+                                        `),m(3,"jhi-course-card-header",19),t(4,`
+                                    `),a(),t(5,`
+                                `)),i&2){let e=l.$implicit;c(3),u("courseId",e.id)("courseTitle",e.title)("courseIcon",e.icon)("courseColor",e.color)("archiveMode",!0)}}function ne(i,l){if(i&1&&(t(0,`
+                        `),s(1,"div",16),t(2,`
+                            `),s(3,"div",17),t(4,`
+                                `),g(5,ie,6,5,null,null,v),f(7,"searchFilter"),a(),t(8,`
+                        `),a(),t(9,`
+                    `)),i&2){let e=p().$implicit,n=p(3);c(5),y(F(7,0,n.coursesBySemester[e],T(4,X),n.searchCourseText))}}function re(i,l){i&1&&(t(0,`
+                        `),m(1,"hr",20),t(2,`
+                    `))}function oe(i,l){if(i&1){let e=w();t(0,`
+                    `),s(1,"div",13),f(2,"searchFilter"),_("click",function(){let r=h(e).$implicit,o=p(3);return x(o.isCourseFoundInSemester(r)&&o.toggleCollapseState(r))}),t(3,`
+                        `),m(4,"span",14),t(5,`
+                        `),m(6,"fa-icon",15),t(7,`
+                    `),a(),t(8,`
+                    `),C(9,ne,10,5)(10,re,3,0)}if(i&2){let e=l.$implicit,n=l.$index,r=l.$count,o=p(3);c(),B("id","semester-group-",n,""),u("ngClass",b(13,Z,!F(2,8,o.coursesBySemester[e],T(12,X),o.searchCourseText).length)),c(3),A("jhiTranslate",o.fullFormOfSemesterStrings[e]),u("translateValues",b(15,ee,e.slice(2))),c(2),u("icon",o.semesterCollapsed[e]?o.faAngleDown:o.faAngleUp),c(3),d(o.semesterCollapsed[e]?-1:9),c(),d(n!==r-1?10:-1)}}function se(i,l){if(i&1&&(t(0,`
+            `),s(1,"div",12),t(2,`
+                `),g(3,oe,11,17,null,null,v),a(),t(5,`
+        `)),i&2){let e=p(2);c(3),y(e.semesters)}}function ae(i,l){i&1&&(t(0,`
+            `),s(1,"div",21),t(2,`
+                `),m(3,"h4",22),t(4,`
+            `),a(),t(5,`
+        `))}function ce(i,l){if(i&1&&(t(0,`
+    `),s(1,"div",0),t(2,`
+        `),s(3,"div",1),t(4,`
+            `),s(5,"div",2),t(6,`
+                `),m(7,"h3",3),t(8,`
+                `),m(9,"fa-icon",4),f(10,"artemisTranslate"),t(11,`
+            `),a(),t(12,`
+            `),C(13,te,16,1),a(),t(14,`
+    `),a(),t(15,`
+    `),s(16,"div",5),t(17,`
+        `),C(18,se,6,0)(19,ae,6,0),a(),t(20,`
+`)),i&2){let e=p();c(9),A("ngbTooltip",I(10,5,"artemisApp.course.archive.tip")),u("icon",e.faQuestionCircle)("size",e.iconSize),c(4),d(e.courses.length?13:-1),c(5),d(e.courses.length?18:19)}}var Fe=(()=>{class i{archiveCourseSubscription;courseService=S(Q);alertService=S(z);courses=[];semesters;fullFormOfSemesterStrings={};semesterCollapsed={};coursesBySemester={};searchCourseText="";isSortAscending=!0;iconSize="lg";faAngleDown=P;faAngleUp=N;faArrowDown19=$;faArrowUp19=U;faQuestionCircle=D;ngOnInit(){this.loadArchivedCourses(),this.courseService.enableCourseOverviewBackground()}loadArchivedCourses(){this.archiveCourseSubscription=this.courseService.getCoursesForArchive().subscribe({next:e=>{e.body&&(this.courses=e.body||[],this.courses=this.sortCoursesByTitle(this.courses),this.semesters=this.getUniqueSemesterNamesSorted(this.courses),this.mapCoursesIntoSemesters())},error:e=>L(this.alertService,e)})}mapCoursesIntoSemesters(){this.semesters.forEach(e=>{this.semesterCollapsed[e]=!1,this.courseService.setSemesterCollapseState(e,!1),this.coursesBySemester[e]=this.courses.filter(n=>n.semester===e),this.fullFormOfSemesterStrings[e]=e.startsWith("WS")?"artemisApp.course.archive.winterSemester":"artemisApp.course.archive.summerSemester"})}ngOnDestroy(){this.archiveCourseSubscription.unsubscribe(),this.courseService.disableCourseOverviewBackground()}setSearchValue(e){this.searchCourseText=e,e!==""?this.expandOrCollapseBasedOnSearchValue():this.getCollapseStateForSemesters()}onSort(){this.semesters&&(this.semesters.reverse(),this.isSortAscending=!this.isSortAscending)}expandOrCollapseBasedOnSearchValue(){for(let e of this.semesters){let n=this.coursesBySemester[e].some(r=>r.title?.toLowerCase().includes(this.searchCourseText.toLowerCase()));this.semesterCollapsed[e]=!n}}getCollapseStateForSemesters(){for(let e of this.semesters)this.semesterCollapsed[e]=this.courseService.getSemesterCollapseStateFromStorage(e)}toggleCollapseState(e){this.semesterCollapsed[e]=!this.semesterCollapsed[e],this.courseService.setSemesterCollapseState(e,this.semesterCollapsed[e])}isCourseFoundInSemester(e){return this.coursesBySemester[e].some(n=>n.title?.toLowerCase().includes(this.searchCourseText.toLowerCase()))}sortCoursesByTitle(e){return e.sort((n,r)=>(n.title??"").localeCompare(r.title??""))}getUniqueSemesterNamesSorted(e){return e.map(n=>n.semester??"").filter((n,r,o)=>o.indexOf(n)===r).sort((n,r)=>{let o=parseInt(r.slice(2,4),10)-parseInt(n.slice(2,4),10);if(o!==0)return o;let E=n.slice(0,2),Y=r.slice(0,2);return E===Y?0:E==="WS"?-1:1})}static \u0275fac=function(n){return new(n||i)};static \u0275cmp=j({type:i,selectors:[["jhi-course-archive"]],decls:1,vars:1,consts:[[1,"module-bg","p-3","rounded-3","mb-3"],[1,"d-flex","justify-content-between","align-items-center"],[1,"d-flex","justify-content-start","gap-1"],["jhiTranslate","artemisApp.course.archive.title",1,"fw-medium","mb-0"],[1,"text-secondary","align-self-center",3,"icon","size","ngbTooltip"],[1,"module-bg","py-3","rounded-3"],[1,"d-flex","justify-content-between","gap-3","align-items-center","ms-1"],[1,"text-primary","d-inline-flex"],["id","sort-test",1,"d-inline-flex","align-items-center",3,"click"],["id","icon-test-down",3,"icon"],["jhiTranslate","artemisApp.course.archive.sort",1,"ms-1"],[1,"my-0",3,"newSearchEvent"],[1,"mb-0"],["tabindex","0","role","button",1,"d-flex","justify-content-between","align-items-center","px-3",3,"click","id","ngClass"],[1,"fw-bold",3,"jhiTranslate","translateValues"],[3,"icon"],[1,"container-fluid","mt-2"],[1,"course-grid","justify-content-center","align-items-center"],[1,"course-card-wrapper","p-0"],[1,"col-2",3,"courseId","courseTitle","courseIcon","courseColor","archiveMode"],[1,"mx-3"],[1,"d-flex","justify-content-center"],["jhiTranslate","artemisApp.course.archive.noCoursesPreviousSemester",1,"text-secondary","text-center","mb-0"]],template:function(n,r){n&1&&C(0,ce,21,7),n&2&&d(r.courses?0:-1)},dependencies:[K,J,R,G,W,V,O,H,q,k,M],styles:[".course-grid[_ngcontent-%COMP%]{display:grid;grid-template-columns:repeat(auto-fill,minmax(325px,1fr));grid-gap:1rem;justify-items:center}.course-card-wrapper[_ngcontent-%COMP%]{width:100%;max-width:400px}.container-fluid[_ngcontent-%COMP%]{--bs-gutter-x: 2rem}"]})}return i})();export{Fe as CourseArchiveComponent};
+//# sourceMappingURL=course-archive.component-TQNVFA53.js.map

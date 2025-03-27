@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/markdown-editor/extensions/ArtemisTextReplacementPlugin.ts"],
+  "sourcesContent": ["import type MarkdownIt from 'markdown-it';\r\nimport type { PluginSimple } from 'markdown-it';\r\n\r\n/**\r\n * Markdown-It plugin that allows replacing text in the raw markdown before tokenizing.\r\n * See more about Markdown-It plugins here: https://github.com/markdown-it/markdown-it/tree/master/docs\r\n */\r\nexport abstract class ArtemisTextReplacementPlugin {\r\n    getExtension(): PluginSimple {\r\n        return (md: MarkdownIt): void => {\r\n            md.core.ruler.before('normalize', 'artemis_text_replacement', (state) => {\r\n                // Perform the replacement on the raw markdown text\r\n                state.src = this.replaceText(state.src);\r\n            });\r\n        };\r\n    }\r\n\r\n    /**\r\n     * Performs text replacement on the raw markdown before parsing.\r\n     * @param text The raw markdown text.\r\n     * @returns The modified markdown text after replacements.\r\n     */\r\n    abstract replaceText(text: string): string;\r\n}\r\n"],
+  "mappings": "AAOM,IAAgBA,EAAhB,KAA4C,CAC9CC,cAAY,CACR,OAAQC,GAAwB,CAC5BA,EAAGC,KAAKC,MAAMC,OAAO,YAAa,2BAA6BC,GAAS,CAEpEA,EAAMC,IAAM,KAAKC,YAAYF,EAAMC,GAAG,CAC1C,CAAC,CACL,CACJ",
+  "names": ["ArtemisTextReplacementPlugin", "getExtension", "md", "core", "ruler", "before", "state", "src", "replaceText"]
+}

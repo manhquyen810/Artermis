@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/programming/repository-info.model.ts"],
+  "sourcesContent": ["export class RepositoryInfo {\r\n    public repositoryName?: string;\r\n    public repositoryType?: string;\r\n    public triggeredByPushTo?: TriggeredByPushTo;\r\n    public assignmentRepositoryUri?: string;\r\n    public testRepositoryUri?: string;\r\n    public solutionRepositoryUri?: string;\r\n    public auxiliaryRepositoryUris?: string[];\r\n    public auxiliaryRepositoryCheckoutDirectories?: string[];\r\n}\r\n\r\nexport enum TriggeredByPushTo {\r\n    USER = 'USER',\r\n    TESTS = 'TESTS',\r\n    SOLUTION = 'SOLUTION',\r\n    TEMPLATE = 'TEMPLATE',\r\n    AUXILIARY = 'AUXILIARY',\r\n}\r\n"],
+  "mappings": "AAWA,IAAYA,EAAZ,SAAYA,EAAiB,CACzBA,OAAAA,EAAA,KAAA,OACAA,EAAA,MAAA,QACAA,EAAA,SAAA,WACAA,EAAA,SAAA,WACAA,EAAA,UAAA,YALQA,CAMZ,EANYA,GAAiB,CAAA,CAAA",
+  "names": ["TriggeredByPushTo"]
+}

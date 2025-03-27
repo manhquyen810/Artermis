@@ -1,0 +1,7 @@
+import{r as k}from"./chunk-Z2YUBN6N.js";import{a as h}from"./chunk-AOI2U3YC.js";import{K as I}from"./chunk-VZRSC3LP.js";import{a as v}from"./chunk-K3W6YFKH.js";import{d as B}from"./chunk-EDXSOKK5.js";import{Db as n,Dc as x,Ma as d,Mc as _,Na as C,Oc as a,Rc as g,Tb as l,Zb as m,dd as i,fd as w,kc as r,mc as y,sc as u,xc as f,yc as T,yd as c,zc as b,zd as s}from"./chunk-5LC5EQRR.js";function F(t,V){if(t&1){let o=x();i(0,`
+    `),f(1,"button",0),c(2,"artemisTranslate"),_("cdkCopyToClipboardCopied",function(){d(o);let p=a();return C(p.onCopyFinished())}),i(3,`
+        `),b(4,"fa-icon",1),i(5),c(6,"artemisTranslate"),T(),i(7,`
+`)}if(t&2){let o=a();n(),y("btn-success",o.wasCopied),g("ngbTooltip",s(2,6,"global.generic.copy")),r("cdkCopyToClipboard",o.copyText),n(3),r("icon",o.faCopy),n(),w(`
+        `,o.wasCopied?s(6,8,"global.generic.copied"):"",`
+    `)}}var N=(()=>{class t{copyText;wasCopied=!1;faCopy=k;onCopyFinished=()=>{this.wasCopied=!0,setTimeout(()=>{this.wasCopied=!1},2e3)};static \u0275fac=function(e){return new(e||t)};static \u0275cmp=l({type:t,selectors:[["jhi-copy-icon-button"]],inputs:{copyText:"copyText"},decls:1,vars:1,consts:[["id","copyButton","type","button",1,"btn","btn-sm",3,"cdkCopyToClipboardCopied","ngbTooltip","cdkCopyToClipboard"],[3,"icon"]],template:function(e,p){e&1&&m(0,F,8,10),e&2&&u(p.copyText.length>0?0:-1)},dependencies:[I,h,B,v],encapsulation:2})}return t})();export{N as a};
+//# sourceMappingURL=chunk-245YX7R6.js.map

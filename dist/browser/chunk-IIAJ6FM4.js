@@ -1,0 +1,2 @@
+import{a as e}from"./chunk-RKZRHQUL.js";import{a as s}from"./chunk-PZ7IDTIM.js";import{c as a,g as i}from"./chunk-CXQURQM5.js";var r=class extends i{diagramType;exampleSolutionModel;exampleSolutionExplanation;constructor(t,m,p){super(a.MODELING),this.course=m,this.exerciseGroup=p,this.diagramType=t,this.assessmentType=s.MANUAL,(this.diagramType===e.ClassDiagram||this.diagramType===e.ActivityDiagram)&&(this.assessmentType=s.SEMI_AUTOMATIC)}};export{r as a};
+//# sourceMappingURL=chunk-IIAJ6FM4.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/text/manage/tutor-effort/tutor-effort-statistics.route.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\r\nimport { UserRouteAccessService } from 'app/core/auth/user-route-access-service';\r\nimport { Authority } from 'app/shared/constants/authority.constants';\r\n\r\nexport const tutorEffortStatisticsRoute: Routes = [\r\n    {\r\n        path: '',\r\n        loadComponent: () => import('app/exercises/text/manage/tutor-effort/tutor-effort-statistics.component').then((m) => m.TutorEffortStatisticsComponent),\r\n        data: {\r\n            authorities: [Authority.ADMIN, Authority.INSTRUCTOR],\r\n            pageTitle: 'artemisApp.textExercise.tutorEffortStatistics.title',\r\n        },\r\n        canActivate: [UserRouteAccessService],\r\n    },\r\n];\r\n"],
+  "mappings": "4pBAIO,IAAMA,EAAqC,CAC9C,CACIC,KAAM,GACNC,cAAeA,IAAM,OAAO,iDAA0E,EAAEC,KAAMC,GAAMA,EAAEC,8BAA8B,EACpJC,KAAM,CACFC,YAAa,CAACC,EAAUC,MAAOD,EAAUE,UAAU,EACnDC,UAAW,uDAEfC,YAAa,CAACC,CAAsB,EACvC",
+  "names": ["tutorEffortStatisticsRoute", "path", "loadComponent", "then", "m", "TutorEffortStatisticsComponent", "data", "authorities", "Authority", "ADMIN", "INSTRUCTOR", "pageTitle", "canActivate", "UserRouteAccessService"]
+}

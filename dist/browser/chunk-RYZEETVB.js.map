@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/shared/feedback/long-feedback-text.service.ts"],
+  "sourcesContent": ["import { Injectable, inject } from '@angular/core';\r\nimport { HttpClient, HttpResponse } from '@angular/common/http';\r\nimport { Observable } from 'rxjs';\r\n\r\nexport type LongFeedbackResponse = HttpResponse<string>;\r\n\r\n@Injectable({ providedIn: 'root' })\r\nexport class LongFeedbackTextService {\r\n    private http = inject(HttpClient);\r\n\r\n    find(feedbackId: number): Observable<LongFeedbackResponse> {\r\n        return this.http.get(`api/assessment/feedbacks/${feedbackId}/long-feedback`, { observe: 'response', responseType: 'text' });\r\n    }\r\n}\r\n"],
+  "mappings": "yFAOA,IAAaA,GAAuB,IAAA,CAA9B,MAAOA,CAAuB,CACxBC,KAAOC,EAAOC,CAAU,EAEhCC,KAAKC,EAAkB,CACnB,OAAO,KAAKJ,KAAKK,IAAI,4BAA4BD,CAAU,iBAAkB,CAAEE,QAAS,WAAYC,aAAc,MAAM,CAAE,CAC9H,4CALSR,EAAuB,6BAAvBA,EAAuBS,QAAvBT,EAAuBU,UAAAC,WADV,MAAM,CAAA,SACnBX,CAAuB,GAAA",
+  "names": ["LongFeedbackTextService", "http", "inject", "HttpClient", "find", "feedbackId", "get", "observe", "responseType", "factory", "\u0275fac", "providedIn"]
+}

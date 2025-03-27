@@ -1,0 +1,2 @@
+import{a as i,b as o}from"./chunk-OI2L2OHD.js";import{b as t,j as c}from"./chunk-3JSWSN6W.js";var b=class k{block;feedback;selectable=!0;highlighted=!1;deletable=!0;constructor(e,r){this.block=e,this.feedback=r}static new(){let e=new o;return e.type=i.MANUAL,new k(e)}initFeedback(){this.feedback||this.block&&(this.feedback=c.forText(this.block),this.feedback.type=t.MANUAL)}};export{b as a};
+//# sourceMappingURL=chunk-JCAGYDTX.js.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/shared/team/team.utils.ts"],
+  "sourcesContent": ["import { Team } from 'app/entities/team.model';\r\n\r\n/**\r\n * Formats a team for displaying it in an autocomplete search\r\n *\r\n * Examples:\r\n * Team 1 (team1) ⟹ Max Mustermann (ga12abc), Erika Musterfrau (ga34def)\r\n * Team 2 (team2)\r\n *\r\n * @param team\r\n */\r\nexport function formatTeamAsSearchResult(team: Team) {\r\n    const { name, shortName, students } = team;\r\n    const studentsFormatted = students?.map((s) => `${s.name} (${s.login})`).join(', ');\r\n    return `${name} (${shortName})` + (students && students.length > 0 ? ` ⟹ ${studentsFormatted}` : '');\r\n}\r\n"],
+  "mappings": "AAWM,SAAUA,EAAyBC,EAAU,CAC/C,GAAM,CAAEC,KAAAA,EAAMC,UAAAA,EAAWC,SAAAA,CAAQ,EAAKH,EAChCI,EAAoBD,GAAUE,IAAKC,GAAM,GAAGA,EAAEL,IAAI,KAAKK,EAAEC,KAAK,GAAG,EAAEC,KAAK,IAAI,EAClF,MAAO,GAAGP,CAAI,KAAKC,CAAS,KAAOC,GAAYA,EAASM,OAAS,EAAI,WAAML,CAAiB,GAAK,GACrG",
+  "names": ["formatTeamAsSearchResult", "team", "name", "shortName", "students", "studentsFormatted", "map", "s", "login", "join", "length"]
+}

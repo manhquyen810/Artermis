@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/iris/iris-stage-dto.model.ts"],
+  "sourcesContent": ["export class IrisStageDTO {\r\n    name: string;\r\n    weight: number;\r\n    state: IrisStageStateDTO;\r\n    message: string;\r\n\r\n    lowerCaseState?: string;\r\n}\r\n\r\nexport enum IrisStageStateDTO {\r\n    NOT_STARTED = 'NOT_STARTED',\r\n    IN_PROGRESS = 'IN_PROGRESS',\r\n    DONE = 'DONE',\r\n    SKIPPED = 'SKIPPED',\r\n    ERROR = 'ERROR',\r\n}\r\n"],
+  "mappings": "AASA,IAAYA,EAAZ,SAAYA,EAAiB,CACzBA,OAAAA,EAAA,YAAA,cACAA,EAAA,YAAA,cACAA,EAAA,KAAA,OACAA,EAAA,QAAA,UACAA,EAAA,MAAA,QALQA,CAMZ,EANYA,GAAiB,CAAA,CAAA",
+  "names": ["IrisStageStateDTO"]
+}

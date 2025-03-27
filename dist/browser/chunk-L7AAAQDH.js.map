@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/sidebar/sidebar-event.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { BehaviorSubject } from 'rxjs';\r\n\r\n@Injectable({ providedIn: 'root' })\r\nexport class SidebarEventService {\r\n    private sidebarCardClickedEvent = new BehaviorSubject<string | number | null>(null);\r\n\r\n    emitSidebarCardEvent(itemId: string | number) {\r\n        this.sidebarCardClickedEvent.next(itemId);\r\n    }\r\n\r\n    emitResetValue() {\r\n        this.sidebarCardClickedEvent.next(null);\r\n    }\r\n\r\n    sidebarCardEventListener() {\r\n        return this.sidebarCardClickedEvent.asObservable();\r\n    }\r\n}\r\n"],
+  "mappings": "gDAIA,IAAaA,GAAmB,IAAA,CAA1B,MAAOA,CAAmB,CACpBC,wBAA0B,IAAIC,EAAwC,IAAI,EAElFC,qBAAqBC,EAAuB,CACxC,KAAKH,wBAAwBI,KAAKD,CAAM,CAC5C,CAEAE,gBAAc,CACV,KAAKL,wBAAwBI,KAAK,IAAI,CAC1C,CAEAE,0BAAwB,CACpB,OAAO,KAAKN,wBAAwBO,aAAY,CACpD,4CAbSR,EAAmB,6BAAnBA,EAAmBS,QAAnBT,EAAmBU,UAAAC,WADN,MAAM,CAAA,SACnBX,CAAmB,GAAA",
+  "names": ["SidebarEventService", "sidebarCardClickedEvent", "BehaviorSubject", "emitSidebarCardEvent", "itemId", "next", "emitResetValue", "sidebarCardEventListener", "asObservable", "factory", "\u0275fac", "providedIn"]
+}

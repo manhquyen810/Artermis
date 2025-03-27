@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/feature-overview/feature-overview.route.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\r\n\r\nexport const routes: Routes = [\r\n    {\r\n        path: 'instructors',\r\n        loadComponent: () => import('app/feature-overview/feature-overview.component').then((m) => m.FeatureOverviewComponent),\r\n        data: {\r\n            pageTitle: 'featureOverview.instructor.pageTitle',\r\n        },\r\n    },\r\n    {\r\n        path: 'students',\r\n        loadComponent: () => import('app/feature-overview/feature-overview.component').then((m) => m.FeatureOverviewComponent),\r\n        data: {\r\n            pageTitle: 'featureOverview.students.pageTitle',\r\n        },\r\n    },\r\n];\r\n"],
+  "mappings": "4BAEO,IAAMA,EAAiB,CAC1B,CACIC,KAAM,cACNC,cAAeA,IAAM,OAAO,0CAAiD,EAAEC,KAAMC,GAAMA,EAAEC,wBAAwB,EACrHC,KAAM,CACFC,UAAW,yCAGnB,CACIN,KAAM,WACNC,cAAeA,IAAM,OAAO,0CAAiD,EAAEC,KAAMC,GAAMA,EAAEC,wBAAwB,EACrHC,KAAM,CACFC,UAAW,sCAElB",
+  "names": ["routes", "path", "loadComponent", "then", "m", "FeatureOverviewComponent", "data", "pageTitle"]
+}

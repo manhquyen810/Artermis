@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/table/pageable-table.ts"],
+  "sourcesContent": ["export interface PageableResult<T> {\r\n    content: T[];\r\n    totalElements: number;\r\n    totalPages: number;\r\n}\r\n\r\nexport interface SearchResult<T> {\r\n    resultsOnPage: T[];\r\n    numberOfPages: number;\r\n}\r\n\r\n/**\r\n * Enumeration specifying sorting order options.\r\n */\r\nexport enum SortingOrder {\r\n    ASCENDING = 'ASCENDING',\r\n    DESCENDING = 'DESCENDING',\r\n}\r\n\r\nexport interface PageableSearch {\r\n    page: number;\r\n    pageSize: number;\r\n    sortingOrder: SortingOrder;\r\n    sortedColumn: string;\r\n}\r\n\r\nexport interface SearchTermPageableSearch extends PageableSearch {\r\n    searchTerm: string;\r\n}\r\n\r\nexport interface CourseCompetencyFilter {\r\n    title: string;\r\n    description: string;\r\n    courseTitle: string;\r\n    semester: string;\r\n}\r\n\r\nexport interface CompetencyPageableSearch extends PageableSearch, CourseCompetencyFilter {}\r\n"],
+  "mappings": "AAcA,IAAYA,EAAZ,SAAYA,EAAY,CACpBA,OAAAA,EAAA,UAAA,YACAA,EAAA,WAAA,aAFQA,CAGZ,EAHYA,GAAY,CAAA,CAAA",
+  "names": ["SortingOrder"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/util/course.util.ts"],
+  "sourcesContent": ["import { Course } from 'app/entities/course.model';\r\n\r\n/**\r\n * Sorts an array of Course objects alphabetically by their title.\r\n *\r\n * @param {Course[]} courses - The array of Course objects to be sorted.\r\n * @param {boolean} isSortAscending - Sort direction, it is ascending by default.\r\n * @returns {Course[]} The sorted array of Course objects.\r\n */\r\nexport function sortCourses(courses: Course[], isSortAscending: boolean = true): Course[] {\r\n    return courses.sort((courseA, courseB) => {\r\n        const sortOrder = (courseA.title ?? '').localeCompare(courseB.title ?? '');\r\n        return isSortAscending ? sortOrder : -sortOrder;\r\n    });\r\n}\r\n"],
+  "mappings": "AASM,SAAUA,EAAYC,EAAmBC,EAA2B,GAAI,CAC1E,OAAOD,EAAQE,KAAK,CAACC,EAASC,IAAW,CACrC,IAAMC,GAAaF,EAAQG,OAAS,IAAIC,cAAcH,EAAQE,OAAS,EAAE,EACzE,OAAOL,EAAkBI,EAAY,CAACA,CAC1C,CAAC,CACL",
+  "names": ["sortCourses", "courses", "isSortAscending", "sort", "courseA", "courseB", "sortOrder", "title", "localeCompare"]
+}

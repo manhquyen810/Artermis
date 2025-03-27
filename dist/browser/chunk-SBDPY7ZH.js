@@ -1,0 +1,2 @@
+import{b as n}from"./chunk-UHM5AJSI.js";import{Ea as t,Vb as o,_a as e}from"./chunk-5LC5EQRR.js";var a=(()=>{class i{el=t(e);showInOrionWindow;ngOnInit(){(!this.showInOrionWindow&&n||this.showInOrionWindow&&!n)&&(this.el.nativeElement.style.display="none")}static \u0275fac=function(r){return new(r||i)};static \u0275dir=o({type:i,selectors:[["","jhiOrionFilter",""]],inputs:{showInOrionWindow:"showInOrionWindow"}})}return i})();export{a};
+//# sourceMappingURL=chunk-SBDPY7ZH.js.map

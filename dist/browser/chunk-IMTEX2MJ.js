@@ -1,0 +1,27 @@
+import{a as k}from"./chunk-LQRMY4JN.js";import{a as E}from"./chunk-CNZ75VIL.js";import{a as j}from"./chunk-LBLXP4B5.js";import{d as D}from"./chunk-AR57MWOI.js";import{u as M,v as I}from"./chunk-VZRSC3LP.js";import{c as A}from"./chunk-BNDLMKXK.js";import{c as b}from"./chunk-JXJXC4DZ.js";import{b as R}from"./chunk-R5BZWVRQ.js";import{a as C}from"./chunk-U54OSGNH.js";import{Db as u,Dc as v,Ea as l,Ma as _,Mc as d,Na as x,Oc as c,Rc as w,Tb as p,Va as S,Zb as f,aa as T,dd as i,kc as g,rd as P,sc as m,vc as y,wc as q,xc as s,yc as a,zc as h}from"./chunk-5LC5EQRR.js";var L=(e,o)=>o.id;function $(e,o){e&1&&(i(0,`
+            `),s(1,"div",5),i(2,`
+                `),s(3,"div",6),i(4,`
+                    `),h(5,"span",7),i(6,`
+                `),a(),i(7,`
+            `),a(),i(8,`
+        `))}function N(e,o){if(e&1&&(i(0,`
+                    `),h(1,"jhi-competency-card",9),i(2,`
+                `)),e&2){let t=o.$implicit;u(),g("competency",t)("isPrerequisite",!0)("noProgressRings",!0)}}function O(e,o){if(e&1&&(i(0,`
+            `),s(1,"div",8),i(2,`
+                `),y(3,N,3,3,null,null,L),a(),i(5,`
+        `)),e&2){let t=c();u(3),q(t.prerequisites)}}var B=(()=>{class e{alertService=l(b);activeModal=l(M);prerequisiteService=l(E);courseId;isLoading=!1;prerequisites=[];ngOnInit(){this.courseId&&this.loadData()}loadData(){this.isLoading=!0,this.prerequisiteService.getAllForCourse(this.courseId).pipe(T(()=>{this.isLoading=!1})).subscribe({next:t=>{this.prerequisites=t.body??[]},error:t=>{this.alertService.error(t)}})}clear(){this.activeModal.dismiss("cancel")}static \u0275fac=function(n){return new(n||e)};static \u0275cmp=p({type:e,selectors:[["jhi-course-prerequisites-modal"]],inputs:{courseId:"courseId"},decls:15,vars:1,consts:[[1,"modal-header"],["jhiTranslate","artemisApp.prerequisite.title",1,"modal-title"],["aria-hidden","true","data-dismiss","modal","type","button",1,"btn-close",3,"click"],[1,"modal-body"],[1,"container"],[1,"d-flex","justify-content-center"],["role","status",1,"spinner-border"],["jhiTranslate","loading",1,"sr-only"],[1,"row","justify-content-center","gx-5","gy-2"],[1,"col-12","col-lg-6",3,"competency","isPrerequisite","noProgressRings"]],template:function(n,r){n&1&&(s(0,"div",0),i(1,`
+    `),h(2,"h4",1),i(3,`
+    `),s(4,"button",2),d("click",function(){return r.clear()}),a(),i(5,`
+`),a(),i(6,`
+`),s(7,"div",3),i(8,`
+    `),s(9,"div",4),i(10,`
+        `),f(11,$,9,0)(12,O,6,0),a(),i(13,`
+`),a(),i(14,`
+`)),n&2&&(u(11),m(r.isLoading?11:12))},dependencies:[C,k],encapsulation:2})}return e})();function U(e,o){if(e&1){let t=v();i(0,`
+    `),s(1,"button",0),d("click",function(){_(t);let r=c();return x(r.showPrerequisites(r.course.id))}),a(),i(2,`
+`)}}var de=(()=>{class e{modalService=l(I);course;showPrerequisites(t){let n=this.modalService.open(B,{size:"xl"});n.componentInstance.courseId=t}static \u0275fac=function(n){return new(n||e)};static \u0275cmp=p({type:e,selectors:[["jhi-course-prerequisites-button"]],inputs:{course:"course"},decls:1,vars:1,consts:[["jhiTranslate","artemisApp.studentDashboard.enroll.coursePrerequisites",1,"btn","btn-secondary",3,"click"]],template:function(n,r){n&1&&f(0,U,3,0),n&2&&m(r.course.prerequisites!=null&&r.course.prerequisites.length?0:-1)},dependencies:[C],encapsulation:2})}return e})();var V=(e,o)=>o?e?(o.startsWith("^")||(o="^"+o),o.endsWith("$")||(o=o+"$"),!!e.match(new RegExp(o))):!1:!0;var z=e=>({courseName:e});function W(e,o){if(e&1){let t=v();i(0,`
+    `),s(1,"jhi-confirm-button",0),d("onConfirm",function(){_(t);let r=c();return x(r.registerForCourse(r.course.id))}),a(),i(2,`
+`)}if(e&2){let t=c();u(),w("confirmationText",t.course.enrollmentConfirmationMessage),g("confirmationTitleTranslationParams",P(5,z,t.course.title))("disabled",t.loading)("translateText",!1)("textIsMarkdown",!0)}}function G(e,o){if(e&1){let t=v();i(0,`
+    `),s(1,"button",1),d("click",function(){_(t);let r=c();return x(r.registerForCourse(r.course.id))}),a(),i(2,`
+`)}if(e&2){let t=c();u(),g("disabled",t.loading)}}var Me=(()=>{class e{accountService=l(R);courseService=l(D);profileService=l(A);alertService=l(b);course;onRegistration=new S;userIsAllowedToRegister=!1;loading=!1;loadUserIsAllowedToRegister(){this.loading=!0,this.accountService.identity().then(t=>{this.profileService.getProfileInfo().subscribe(n=>{n&&(this.userIsAllowedToRegister=V(t.login,n.allowedCourseRegistrationUsernamePattern))})}),this.loading=!1}ngOnInit(){this.loadUserIsAllowedToRegister()}registerForCourse(t){this.courseService.registerForCourse(t).subscribe({next:()=>{this.alertService.success("artemisApp.studentDashboard.enroll.enrollSuccessful"),this.onRegistration.emit()},error:n=>{this.alertService.error(n)}})}static \u0275fac=function(n){return new(n||e)};static \u0275cmp=p({type:e,selectors:[["jhi-course-registration-button"]],inputs:{course:"course"},outputs:{onRegistration:"onRegistration"},decls:2,vars:2,consts:[["title","artemisApp.studentDashboard.enroll.enrollInCourse","confirmationTitle","artemisApp.studentDashboard.enroll.courseEnrollmentConfirmationTitle",3,"onConfirm","confirmationText","confirmationTitleTranslationParams","disabled","translateText","textIsMarkdown"],["jhiTranslate","artemisApp.studentDashboard.enroll.enrollInCourse",1,"btn","btn-primary",3,"click","disabled"]],template:function(n,r){n&1&&f(0,W,3,7)(1,G,3,1),n&2&&(m(r.course.enrollmentConfirmationMessage?0:-1),u(),m(r.course.enrollmentConfirmationMessage?-1:1))},dependencies:[j,C],encapsulation:2})}return e})();export{de as a,Me as b};
+//# sourceMappingURL=chunk-IMTEX2MJ.js.map

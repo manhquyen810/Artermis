@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/util/os-detector.util.ts"],
+  "sourcesContent": ["export function getOS(): string {\r\n    const userAgent = window.navigator.userAgent;\r\n\r\n    if (userAgent.indexOf('Win') !== -1) {\r\n        return 'Windows';\r\n    } else if (userAgent.indexOf('Mac') !== -1) {\r\n        return 'MacOS';\r\n    } else if (/Android/.test(userAgent)) {\r\n        return 'Android';\r\n    } else if (userAgent.indexOf('Linux') !== -1) {\r\n        return 'Linux';\r\n    } else if (/iPhone|iPad|iPod/.test(userAgent)) {\r\n        return 'iOS';\r\n    } else {\r\n        return 'Unknown';\r\n    }\r\n}\r\n"],
+  "mappings": "AAAM,SAAUA,GAAK,CACjB,IAAMC,EAAYC,OAAOC,UAAUF,UAEnC,OAAIA,EAAUG,QAAQ,KAAK,IAAM,GACtB,UACAH,EAAUG,QAAQ,KAAK,IAAM,GAC7B,QACA,UAAUC,KAAKJ,CAAS,EACxB,UACAA,EAAUG,QAAQ,OAAO,IAAM,GAC/B,QACA,mBAAmBC,KAAKJ,CAAS,EACjC,MAEA,SAEf",
+  "names": ["getOS", "userAgent", "window", "navigator", "indexOf", "test"]
+}

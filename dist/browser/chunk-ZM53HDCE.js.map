@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/core/language/language.constants.ts"],
+  "sourcesContent": ["/*\r\n    Languages codes are ISO_639-1 codes, see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes\r\n    They are written in English to avoid character encoding issues (not a perfect solution)\r\n*/\r\nexport const LANGUAGES: string[] = [\r\n    'en',\r\n    'de',\r\n    // jhipster-needle-i18n-language-constant - JHipster will add/remove languages in this array\r\n];\r\n"],
+  "mappings": "AAIO,IAAMA,EAAsB,CAC/B,KACA,IACA",
+  "names": ["LANGUAGES"]
+}

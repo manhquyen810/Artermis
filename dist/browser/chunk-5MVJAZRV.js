@@ -1,0 +1,3 @@
+import{b as o}from"./chunk-JXJXC4DZ.js";var c=t=>t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");var h=(t,e)=>{if(!e.flags.includes("g"))throw new Error("Regex must contain global flag, otherwise this function will run out of memory.");let r=[],n=e.exec(t);for(;n;){let s=t.substring(0,n.index+n[1].length+1).split(`
+`).length-1;r.push([s,n[1]]),n=e.exec(t)}return r},l=(t,e,r=!0)=>{switch(e.status){case 400:t.error("error.http.400");break;case 403:t.error("error.http.403");break;case 404:t.error("error.http.404");break;case 405:t.error("error.http.405");break;case 500:break;default:t.addAlert({type:o.DANGER,message:e.message,disableTranslation:r});break}},d=t=>t!==void 0;export{c as a,h as b,l as c,d};
+//# sourceMappingURL=chunk-5MVJAZRV.js.map

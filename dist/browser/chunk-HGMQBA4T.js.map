@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/exercises/shared/plagiarism/types/PlagiarismVerdict.ts"],
+  "sourcesContent": ["export enum PlagiarismVerdict {\r\n    PLAGIARISM = 'PLAGIARISM',\r\n    POINT_DEDUCTION = 'POINT_DEDUCTION',\r\n    WARNING = 'WARNING',\r\n    NO_PLAGIARISM = 'NO_PLAGIARISM',\r\n}\r\n"],
+  "mappings": "AAAA,IAAYA,EAAZ,SAAYA,EAAiB,CACzBA,OAAAA,EAAA,WAAA,aACAA,EAAA,gBAAA,kBACAA,EAAA,QAAA,UACAA,EAAA,cAAA,gBAJQA,CAKZ,EALYA,GAAiB,CAAA,CAAA",
+  "names": ["PlagiarismVerdict"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/entities/tutorial-group/tutorial-groups-configuration.model.ts"],
+  "sourcesContent": ["import { BaseEntity } from 'app/shared/model/base-entity';\r\nimport { Course } from 'app/entities/course.model';\r\nimport dayjs from 'dayjs/esm';\r\nimport { TutorialGroupFreePeriod } from './tutorial-group-free-day.model';\r\n\r\nexport class TutorialGroupsConfiguration implements BaseEntity {\r\n    public id?: number;\r\n    public course?: Course;\r\n    public tutorialPeriodStartInclusive?: dayjs.Dayjs;\r\n    public tutorialPeriodEndInclusive?: dayjs.Dayjs;\r\n    public tutorialGroupFreePeriods?: TutorialGroupFreePeriod[];\r\n    public useTutorialGroupChannels?: boolean;\r\n    public usePublicTutorialGroupChannels?: boolean;\r\n}\r\n"],
+  "mappings": "AAKM,IAAOA,EAAP,KAAkC,CAC7BC,GACAC,OACAC,6BACAC,2BACAC,yBACAC,yBACAC",
+  "names": ["TutorialGroupsConfiguration", "id", "course", "tutorialPeriodStartInclusive", "tutorialPeriodEndInclusive", "tutorialGroupFreePeriods", "useTutorialGroupChannels", "usePublicTutorialGroupChannels"]
+}

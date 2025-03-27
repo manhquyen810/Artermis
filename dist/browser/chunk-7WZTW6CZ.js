@@ -1,0 +1,2 @@
+var o=class{id;bonusStrategy;weight;sourceGradingScale;bonusToGradingScale},r=function(e){return e.GRADES_CONTINUOUS="GRADES_CONTINUOUS",e.GRADES_DISCRETE="GRADES_DISCRETE",e.POINTS="POINTS",e}(r||{}),s=class{studentPointsOfBonusTo;studentPointsOfBonusSource;examGrade;bonusGrade;finalPoints;finalGrade;exceedsMax=!1;constructor(t,n){this.studentPointsOfBonusTo=t,this.studentPointsOfBonusSource=n}};export{o as a,r as b,s as c};
+//# sourceMappingURL=chunk-7WZTW6CZ.js.map

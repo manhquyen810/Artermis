@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/iris/settings/iris-exercise-settings-update/iris-exercise-settings-update-route.ts"],
+  "sourcesContent": ["import { Routes } from '@angular/router';\r\nimport { Authority } from 'app/shared/constants/authority.constants';\r\nimport { PendingChangesGuard } from 'app/shared/guard/pending-changes.guard';\r\nimport { UserRouteAccessService } from 'app/core/auth/user-route-access-service';\r\n\r\nimport { IrisGuard } from 'app/iris/iris-guard.service';\r\n\r\nexport const routes: Routes = [\r\n    {\r\n        path: '',\r\n        loadComponent: () => import('app/iris/settings/iris-exercise-settings-update/iris-exercise-settings-update.component').then((m) => m.IrisExerciseSettingsUpdateComponent),\r\n        data: {\r\n            authorities: [Authority.INSTRUCTOR, Authority.ADMIN],\r\n            pageTitle: 'artemisApp.iris.settings.title.exercise',\r\n        },\r\n        canActivate: [UserRouteAccessService, IrisGuard],\r\n        canDeactivate: [PendingChangesGuard],\r\n    },\r\n];\r\n"],
+  "mappings": "wwBAOO,IAAMA,EAAiB,CAC1B,CACIC,KAAM,GACNC,cAAeA,IAAM,OAAO,uDAAyF,EAAEC,KAAMC,GAAMA,EAAEC,mCAAmC,EACxKC,KAAM,CACFC,YAAa,CAACC,EAAUC,WAAYD,EAAUE,KAAK,EACnDC,UAAW,2CAEfC,YAAa,CAACC,EAAwBC,CAAS,EAC/CC,cAAe,CAACC,CAAmB,EACtC",
+  "names": ["routes", "path", "loadComponent", "then", "m", "IrisExerciseSettingsUpdateComponent", "data", "authorities", "Authority", "INSTRUCTOR", "ADMIN", "pageTitle", "canActivate", "UserRouteAccessService", "IrisGuard", "canDeactivate", "PendingChangesGuard"]
+}

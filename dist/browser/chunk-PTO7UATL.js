@@ -1,0 +1,2 @@
+var s=(()=>{class t{static DEFAULT_PLAGIARISM_GRADE="U";static DEFAULT_NO_PARTICIPATION_GRADE="X";id;gradeType=e.NONE;gradeSteps;plagiarismGrade;noParticipationGrade;GradeStep;course;exam;presentationsNumber;presentationsWeight;constructor(r=e.GRADE,a=[]){this.gradeType=r,this.gradeSteps=a}}return t})(),e=function(t){return t.NONE="NONE",t.GRADE="GRADE",t.BONUS="BONUS",t}(e||{});export{s as a,e as b};
+//# sourceMappingURL=chunk-PTO7UATL.js.map

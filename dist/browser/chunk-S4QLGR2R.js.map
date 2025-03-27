@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/course/dashboards/due-date-stat.model.ts"],
+  "sourcesContent": ["/**\r\n * Model to represent a number that depends on an exercise due-date, like\r\n * numberOfSubmissions. Has an inTime and late member.\r\n */\r\nexport class DueDateStat {\r\n    public inTime = 0;\r\n    public late = 0;\r\n\r\n    /**\r\n     * Computed property to get the total number of\r\n     * both properties, inTime and late members.\r\n     */\r\n    public get total() {\r\n        return this.inTime + this.late;\r\n    }\r\n}\r\n"],
+  "mappings": "AAIM,IAAOA,EAAP,KAAkB,CACbC,OAAS,EACTC,KAAO,EAMd,IAAWC,OAAK,CACZ,OAAO,KAAKF,OAAS,KAAKC,IAC9B",
+  "names": ["DueDateStat", "inTime", "late", "total"]
+}

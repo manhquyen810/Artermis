@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/no-data-component.ts"],
+  "sourcesContent": ["import { Component } from '@angular/core';\r\n\r\n@Component({\r\n    selector: 'jhi-no-data',\r\n    template: `<span>-</span>`,\r\n})\r\nexport class NoDataComponent {}\r\n"],
+  "mappings": "iEAMA,IAAaA,GAAe,IAAA,CAAtB,MAAOA,CAAe,4CAAfA,EAAe,2BAAfA,EAAeC,UAAA,CAAA,CAAA,aAAA,CAAA,EAAAC,MAAA,EAAAC,KAAA,EAAAC,SAAA,SAAAC,EAAAC,EAAA,CAAAD,EAAA,IAFbE,EAAA,EAAA,MAAA,EAAMC,EAAA,EAAA,GAAA,EAACC,EAAA,6BAETT,CAAe,GAAA",
+  "names": ["NoDataComponent", "selectors", "decls", "vars", "template", "rf", "ctx", "\u0275\u0275elementStart", "\u0275\u0275text", "\u0275\u0275elementEnd"]
+}

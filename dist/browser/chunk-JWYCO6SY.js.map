@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/service/lti.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\r\nimport { BehaviorSubject } from 'rxjs';\r\n\r\n@Injectable({\r\n    providedIn: 'root',\r\n})\r\nexport class LtiService {\r\n    private shownViaLtiSubject = new BehaviorSubject<boolean>(false);\r\n    isShownViaLti$ = this.shownViaLtiSubject.asObservable();\r\n\r\n    setShownViaLti(shownViaLti: boolean) {\r\n        this.shownViaLtiSubject.next(shownViaLti);\r\n    }\r\n}\r\n"],
+  "mappings": "gDAMA,IAAaA,GAAU,IAAA,CAAjB,MAAOA,CAAU,CACXC,mBAAqB,IAAIC,EAAyB,EAAK,EAC/DC,eAAiB,KAAKF,mBAAmBG,aAAY,EAErDC,eAAeC,EAAoB,CAC/B,KAAKL,mBAAmBM,KAAKD,CAAW,CAC5C,4CANSN,EAAU,6BAAVA,EAAUQ,QAAVR,EAAUS,UAAAC,WAFP,MAAM,CAAA,SAETV,CAAU,GAAA",
+  "names": ["LtiService", "shownViaLtiSubject", "BehaviorSubject", "isShownViaLti$", "asObservable", "setShownViaLti", "shownViaLti", "next", "factory", "\u0275fac", "providedIn"]
+}

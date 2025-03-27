@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/utils/semester-utils.ts"],
+  "sourcesContent": ["import dayjs from 'dayjs/esm';\r\n\r\n/**\r\n * Gets a list of semesters in the form 'WS18/19', 'SS18', ...\r\n * Starts from 2018 and goes one year into the future\r\n */\r\nexport function getSemesters() {\r\n    const startYear = 2018;\r\n    const futureYears = 1;\r\n    const years = dayjs().year() - startYear + futureYears;\r\n    const startYearShort = startYear - 2000;\r\n\r\n    const semesters: string[] = [];\r\n    for (let i = 0; i <= years; i++) {\r\n        const currentYear = startYearShort + i;\r\n        semesters.unshift('SS' + currentYear);\r\n        semesters.unshift('WS' + currentYear + '/' + (currentYear + 1));\r\n    }\r\n    // Add an empty semester as default value\r\n    semesters.push('');\r\n    return semesters;\r\n}\r\n"],
+  "mappings": "wCAMM,SAAUA,GAAY,CAGxB,IAAMC,EAAQC,EAAK,EAAGC,KAAI,EAAKC,KAAYC,EACrCC,EAAiBF,GAEjBG,EAAsB,CAAA,EAC5B,QAASC,EAAI,EAAGA,GAAKP,EAAOO,IAAK,CAC7B,IAAMC,EAAcH,EAAiBE,EACrCD,EAAUG,QAAQ,KAAOD,CAAW,EACpCF,EAAUG,QAAQ,KAAOD,EAAc,KAAOA,EAAc,EAAE,CAClE,CAEAF,OAAAA,EAAUI,KAAK,EAAE,EACVJ,CACX",
+  "names": ["getSemesters", "years", "dayjs", "year", "startYear", "futureYears", "startYearShort", "semesters", "i", "currentYear", "unshift", "push"]
+}

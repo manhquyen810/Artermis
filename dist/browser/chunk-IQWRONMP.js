@@ -1,0 +1,2 @@
+import{c as f}from"./chunk-JNO6DNVW.js";import{Ea as s,Wb as n}from"./chunk-5LC5EQRR.js";var u=(()=>{class e{artemisDatePipe=s(f);transform(t,r="long-date",i=void 0,a=!1){if(!t)return"";let m=this.artemisDatePipe.transform(t[0],r,!1,i,a),o=this.artemisDatePipe.transform(t[1],r,!1,i,a);return`${m} - ${o}`}static \u0275fac=function(r){return new(r||e)};static \u0275pipe=n({name:"artemisDateRange",type:e,pure:!1})}return e})();export{u as a};
+//# sourceMappingURL=chunk-IQWRONMP.js.map

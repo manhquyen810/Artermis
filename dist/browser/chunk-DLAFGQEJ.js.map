@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/main/webapp/app/shared/constants/pagination.constants.ts"],
+  "sourcesContent": ["export const ITEMS_PER_PAGE = 50;\r\nexport const ASC = 'asc';\r\nexport const DESC = 'desc';\r\nexport const SORT = 'sort';\r\n"],
+  "mappings": "AACO,IAAMA,EAAM,MACNC,EAAO,OACPC,EAAO",
+  "names": ["ASC", "DESC", "SORT"]
+}
