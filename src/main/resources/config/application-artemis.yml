@@ -12,7 +12,7 @@ artemis:
   bcrypt-salt-rounds: 11  # The number of salt rounds for the bcrypt password hashing. Lower numbers make it faster but more unsecure and vice versa.
   # Please use the bcrypt benchmark tool to determine the best number of rounds for your system. https://github.com/ls1intum/bcrypt-Benchmark
   user-management:
-    use-external: true
+    use-external: false
     password-reset:
       credential-provider: <provider> # The credential provider which users can log in though (e.g. TUMonline)
       links: # The password reset links for different languages
@@ -36,7 +36,7 @@ artemis:
     registration: # the whole section is optional: whether user can register in Artemis
       enabled: false
       allowed-email-pattern: '[a-zA-Z0-9_\-\.\+]+@(tum\.de|in\.tum\.de|mytum\.de)'
-      allowed-email-pattern-readable: '@tum.de, @in.tum.de, @mytum.de'
+      allowed-email-pattern-readable: '@tum.de, @in.tum.de, @mytum.de, @e.tlu.edu.vn'
       cleanup-time-minutes: 60 # The amount of time until non-activated accounts are deleted automatically
     accept-terms: false     # whether users have to accept terms before they can log in, from a privacy point of view this is not needed during education, therefore the default value is false
     course-registration: # Deprecated: replaced by 'course-enrollment'
@@ -83,6 +83,9 @@ artemis:
     build-log:
       file-expiry-days: 30 # The amount of days until build log files can be deleted
       cleanup-schedule: 0 0 3 * * ? # Cron expression for schedule to delete old build log files
+
+
+
   git:
     name: Artemis
     email: artemis@xcit.tum.de

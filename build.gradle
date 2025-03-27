@@ -459,7 +459,7 @@ tasks.register("stage") {
     dependsOn "bootWar"
 }
 
-// Set the npm cache (used in the Dockerfile)
+// Set the npm cache (used in the docker-compose.yml)
 tasks.register("npmSetCacheDockerfile", NpmTask) {
     args = ["set", "cache", "/opt/artemis/.npm"]
 }

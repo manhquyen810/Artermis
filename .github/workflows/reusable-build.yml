@@ -181,7 +181,7 @@ jobs:
           # beware that the linux/arm64 build from the registry is using an amd64 compiled .war file as
           # the GitHub runners don't support arm64 and QEMU takes too long for emulating the build
           platforms: linux/amd64,linux/arm64
-          file: ./docker/artemis/Dockerfile
+          file: ./docker/artemis/docker-compose.yml
           context: .
           tags: ghcr.io/ls1intum/artemis:${{ inputs.docker_build_tag }}
           push: true
