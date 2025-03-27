@@ -29,6 +29,7 @@ export default defineConfig(({ mode }) => {
             rollupOptions: {
                 external: [/build\/resources\/.*/, /src\/main\/resources\/.*/],
             },
+
         },
         define: {
             'import.meta.vitest': mode !== 'production',
